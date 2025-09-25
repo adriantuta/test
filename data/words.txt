@@ -1,7 +1,45 @@
 Poziom;Kategoria;English;Polski
-A2;Rzeczy w domu;a bed;łóżko
-A2;Rzeczy w domu;a table;stół
-A2;Rzeczy w domu;a chair;krzesło
 A2;Jedzenie;an apple;jabłko
-B1;Praca;a promotion;awans
+A2;Jedzenie;bread;chleb
+A2;Jedzenie;water;woda
+A2;Jedzenie;cheese;ser
+A2;Jedzenie;a sandwich;kanapka
+A2;Dom;a table;stół
+A2;Dom;a chair;krzesło
+A2;Dom;a window;okno
+A2;Dom;a door;drzwi
+A2;Dom;a bed;łóżko
+A2;Zwierzęta;a cat;kot
+A2;Zwierzęta;a dog;pies
+A2;Zwierzęta;a bird;ptak
+A2;Zwierzęta;a fish;ryba
+A2;Czynności;to run;biegać
+A2;Czynności;to read;czytać
+A2;Czynności;to write;pisać
+A2;Czynności;to sleep;spać
 B1;Praca;a salary;pensja
+B1;Praca;a promotion;awans
+B1;Praca;an employee;pracownik
+B1;Praca;a manager;menedżer
+B1;Praca;a deadline;termin ostateczny
+B1;Podróże;a journey;podróż
+B1;Podróże;a ticket;bilet
+B1;Podróże;luggage;bagaż
+B1;Podróże;a passport;paszport
+B1;Podróże;a destination;cel podróży
+B1;Zdrowie;a headache;ból głowy
+B1;Zdrowie;a medicine;lekarstwo
+B1;Zdrowie;an appointment;wizyta u lekarza
+B1;Zdrowie;an illness;choroba
+B2;Technologia;an algorithm;algorytm
+B2;Technologia;a database;baza danych
+B2;Technologia;software;oprogramowanie
+B2;Technologia;hardware;sprzęt komputerowy
+B2;Nauka;a discovery;odkrycie
+B2;Nauka;an experiment;eksperyment
+B2;Nauka;a hypothesis;hipoteza
+B2;Nauka;research;badania naukowe
+B2;Biznes;a negotiation;negocjacje
+B2;Biznes;a contract;kontrakt
+B2;Biznes;an investment;inwestycja
+B2;Biznes;profit;zysk
