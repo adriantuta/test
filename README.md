@@ -2,7 +2,7 @@
 
 Prosta, ale potężna aplikacja webowa do nauki angielskich słówek na poziomach A2, B1 i B2. Umożliwia naukę poprzez listy, fiszki (z wykorzystaniem algorytmu SM-2 light) oraz testy wielokrotnego wyboru (ABC).
 
-![Podgląd aplikacji](https://i.imgur.com/your-screenshot.png) <!-- Należy podmienić na aktualny zrzut ekranu -->
+![Podgląd aplikacji](screenshot.png)
 
 ## Funkcje
 
