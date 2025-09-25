@@ -1,0 +1,3 @@
+Poziom;Kategoria;English;Polski;English Sample;Polish Sample
+A2;Rzeczy w domu;a bed;łóżko;"I sleep in a bed.";"Śpię w łóżku."
+A2;Jedzenie;an apple;jabłko;"I am eating an apple.";"Jem jabłko."

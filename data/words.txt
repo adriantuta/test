@@ -1,0 +1,7 @@
+Poziom;Kategoria;English;Polski
+A2;Rzeczy w domu;a bed;łóżko
+A2;Rzeczy w domu;a table;stół
+A2;Rzeczy w domu;a chair;krzesło
+A2;Jedzenie;an apple;jabłko
+B1;Praca;a promotion;awans
+B1;Praca;a salary;pensja
