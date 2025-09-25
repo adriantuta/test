@@ -3,12 +3,14 @@ const categoryList = document.getElementById('categoryList');
 const listView = document.getElementById('listView');
 const flashView = document.getElementById('flashView');
 const mcqView = document.getElementById('mcqView');
+const inputView = document.getElementById('inputView');
 const searchInput = document.getElementById('searchInput');
 const currentPath = document.getElementById('currentPath');
 const visibleCountEl = document.getElementById('visibleCount');
 const totalCountEl = document.getElementById('totalCount');
 const togglePLBtn = document.getElementById('togglePL');
 const shuffleBtn = document.getElementById('shuffle');
+const reverseModeBtn = document.getElementById('reverseMode');
 const progressBar = document.getElementById('progressBar');
 const filterAllBtn = document.getElementById('filterAll');
 const filterUnknownBtn = document.getElementById('filterUnknown');
@@ -25,6 +27,7 @@ const flashWord = document.getElementById('flashWord');
 const flashTrans = document.getElementById('flashTrans');
 const flashShow = document.getElementById('flashShow');
 const flashNext = document.getElementById('flashNext');
+const flashSpeakBtn = document.getElementById('flashSpeakBtn');
 const smAgain = document.getElementById('smAgain');
 const smHard  = document.getElementById('smHard');
 const smGood  = document.getElementById('smGood');
@@ -34,9 +37,18 @@ const mcqFs = document.getElementById('mcqFs');
 const mcqQuestion = document.getElementById('mcqQuestion');
 const mcqOptions = document.getElementById('mcqOptions');
 const mcqNext = document.getElementById('mcqNext');
+const mcqSpeakBtn = document.getElementById('mcqSpeakBtn');
 const viewListBtn = document.getElementById('viewList');
 const viewFlashBtn = document.getElementById('viewFlash');
 const viewMCQBtn = document.getElementById('viewMCQ');
+const viewInputBtn = document.getElementById('viewInput');
+const inputQuestion = document.getElementById('inputQuestion');
+const inputAnswer = document.getElementById('inputAnswer');
+const inputCorrectAnswer = document.getElementById('inputCorrectAnswer');
+const inputCheckBtn = document.getElementById('inputCheck');
+const inputNextBtn = document.getElementById('inputNext');
+const inputSpeakBtn = document.getElementById('inputSpeakBtn');
+const inputFs = document.getElementById('inputFs');
 const exercisesBtn = document.getElementById('exercisesTab');
 const exercisesSection = document.getElementById('exercisesSection');
 const studySection = document.getElementById('studySection');
@@ -51,6 +63,7 @@ let samples = {}; // { level: { category: { enLower: { enSample, plSample } } } 
 let currentLevel = 'A2';
 let currentCategory = null;
 let showPL = true;
+let reverseMode = false; // false: EN->PL, true: PL->EN
 let currentView = 'list';
 let filterMode = 'all'; // 'all' | 'unknown' | 'known'
 let filterExamplesOnly = false;
@@ -69,6 +82,9 @@ let flashIdx = 0; let flashItems = [];
 
 // MCQ
 let mcqPool=[]; let mcqIdx=0; let mcqCorrect='';
+
+// Input
+let inputPool=[]; let inputIdx=0; let inputCorrect='';
 
 // LIST VIEW ordering
 let listOrder = [];
@@ -179,8 +195,11 @@ function renderList(){
     const id = storageId(currentLevel,currentCategory,en);
     const known = !!localStorage.getItem(id);
 
-    left.innerHTML = `<div class="word-en">${escapeHTML(en)}</div>`+
-                     `<div class="word-pl" style="display:${showPL?'block':'none'}">${escapeHTML(pl)}</div>`;
+    const mainWord = reverseMode ? pl : en;
+    const translation = reverseMode ? en : pl;
+
+    left.innerHTML = `<div class="word-en"><span>${escapeHTML(mainWord)}</span></div>`+
+                     `<div class="word-pl" style="display:${showPL?'block':'none'}">${escapeHTML(translation)}</div>`;
 
     const smp = getSample(currentLevel, currentCategory, en);
     if (smp){
@@ -191,15 +210,32 @@ function renderList(){
     }
 
     const right = document.createElement('div'); right.className='d-flex gap-2 align-items-center';
+
+    const speakBtn = document.createElement('button'); speakBtn.className = 'speak-btn'; speakBtn.innerHTML = '<i class="bi bi-volume-up"></i>'; speakBtn.title = 'Odsłuchaj';
+    speakBtn.addEventListener('click', (e) => { e.stopPropagation(); speak(en); });
+
     const toggle = document.createElement('button'); toggle.className='pill'; toggle.innerHTML = showPL? '<i class="bi bi-eye-slash me-1"></i>Ukryj PL' : '<i class="bi bi-eye me-1"></i>Pokaż PL';
     toggle.addEventListener('click', ()=>{ const plEl=left.querySelector('.word-pl'); const plEx=left.querySelector('.example-pl'); const vis = !plEl || plEl.style.display!=='none'; if(plEl) plEl.style.display = vis? 'none':'block'; if(plEx) plEx.style.display = vis? 'none':'block'; toggle.innerHTML = vis? '<i class="bi bi-eye me-1"></i>Pokaż PL' : '<i class="bi bi-eye-slash me-1"></i>Ukryj PL'; });
     const mark = document.createElement('button'); mark.className='pill'; mark.innerHTML = known? '<i class="bi bi-check2-circle me-1"></i>Zapamiętane' : '<i class="bi bi-circle me-1"></i>Uczone';
     mark.addEventListener('click', ()=>{ const nowKnown=!localStorage.getItem(id); if(nowKnown) localStorage.setItem(id,'1'); else localStorage.removeItem(id); renderProgress(); mark.innerHTML = nowKnown? '<i class="bi bi-check2-circle me-1"></i>Zapamiętane' : '<i class="bi bi-circle me-1"></i>Uczone'; });
+    right.appendChild(speakBtn);
     right.appendChild(toggle); right.appendChild(mark);
     card.appendChild(left); card.appendChild(right);
     card.addEventListener('dblclick', ()=> navigator.clipboard?.writeText(`${en} — ${pl}`));
     listView.appendChild(card);
   }
+}
+
+// ===== TTS =====
+function speak(text) {
+  if (typeof SpeechSynthesisUtterance === 'undefined' || typeof window.speechSynthesis === 'undefined') {
+    alert('Twoja przeglądarka nie obsługuje syntezy mowy.');
+    return;
+  }
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'en-US';
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utterance);
 }
 
 // ===== FLASHCARDS (SM‑2) =====
@@ -211,24 +247,50 @@ function sm2Review(q){ const cur=flashItems[flashIdx % flashItems.length]; if(!c
 
 // ===== MCQ =====
 function startFlash(){ const all=getFilteredItems(); const today=todayStr(); const due=all.filter(({en})=> sm2GetMeta(currentLevel,currentCategory,en).due <= today ); flashItems = (due.length? due : all).slice(); shuffleArray(flashItems); flashIdx=0; flashTrans.style.display = showPL? 'block':'none'; showFlash(); }
-function showFlash(){ const cur=flashItems[flashIdx % (flashItems.length||1)]; if(!cur){ flashWord.textContent='(brak fiszek)'; flashTrans.textContent=''; return; } flashWord.textContent=cur.en; flashTrans.textContent=cur.pl; }
+function showFlash(){ const cur=flashItems[flashIdx % (flashItems.length||1)]; if(!cur){ flashWord.textContent='(brak fiszek)'; flashTrans.textContent=''; return; } flashWord.textContent = reverseMode ? cur.pl : cur.en; flashTrans.textContent = reverseMode ? cur.en : cur.pl; }
 
 function startMCQ(){ mcqPool = getFilteredItems(); shuffleArray(mcqPool); mcqIdx=0; renderMCQ(); }
-function renderMCQ(){ mcqOptions.innerHTML=''; const item=mcqPool[mcqIdx % (mcqPool.length||1)]; if(!item){ mcqQuestion.textContent='(brak pytań)'; return; } const {en,pl}=item; mcqQuestion.textContent=en; mcqCorrect=pl; const distractors=pickDistractors(pl, mcqPool, 3); const options=[pl, ...distractors]; shuffleArray(options); options.forEach((opt,i)=>{ const btn=document.createElement('button'); btn.className='mcq-btn'; btn.textContent=opt; btn.dataset.index = String(i+1); btn.addEventListener('click', ()=>{ if(btn.dataset.answered) return; btn.dataset.answered='1'; seenCount++; if(opt===mcqCorrect){ btn.classList.add('correct'); correctCount++; markKnown(en); } else { btn.classList.add('wrong'); } [...mcqOptions.children].forEach(b=>{ if(b.textContent===mcqCorrect) b.classList.add('correct'); }); updateStats(); }); mcqOptions.appendChild(btn); }); }
+function renderMCQ(){ mcqOptions.innerHTML=''; const item=mcqPool[mcqIdx % (mcqPool.length||1)]; if(!item){ mcqQuestion.textContent='(brak pytań)'; return; } const {en,pl}=item; mcqQuestion.textContent = reverseMode ? pl : en; mcqCorrect = reverseMode ? en : pl; const distractors=pickDistractors(mcqCorrect, mcqPool, 3, reverseMode); const options=[mcqCorrect, ...distractors]; shuffleArray(options); options.forEach((opt,i)=>{ const btn=document.createElement('button'); btn.className='mcq-btn'; btn.textContent=opt; btn.dataset.index = String(i+1); btn.addEventListener('click', ()=>{ if(btn.dataset.answered) return; btn.dataset.answered='1'; seenCount++; if(opt===mcqCorrect){ btn.classList.add('correct'); correctCount++; markKnown(en); } else { btn.classList.add('wrong'); } [...mcqOptions.children].forEach(b=>{ if(b.textContent===mcqCorrect) b.classList.add('correct'); }); updateStats(); }); mcqOptions.appendChild(btn); }); }
 
 function selectFirstCategory(){ const cats=Object.keys(data[currentLevel]||{}); currentCategory=cats[0]||null; rebuildListOrder(); renderView(); }
 
 function renderView(){ renderCategories(); if(!currentCategory){ currentPath.textContent='Wybierz kategorię'; visibleCountEl.textContent='0'; totalCountEl.textContent='0'; return; } const total=(data[currentLevel]?.[currentCategory]||[]).length; currentPath.textContent=`${currentLevel} › ${currentCategory} • ${total} słów`; renderCounts(); renderProgress(); showView(currentView); }
 
-function updateGlobalControlsVisibility(){ const showListControls = currentView === 'list'; togglePLBtn.style.display = showListControls ? '' : 'none'; shuffleBtn.style.display = showListControls ? '' : 'none'; filterWithExampleBtn.style.display = showListControls ? '' : 'none'; }
+function updateGlobalControlsVisibility(){
+    const showListControls = currentView === 'list';
+    togglePLBtn.style.display = showListControls ? '' : 'none';
+    shuffleBtn.style.display = showListControls ? '' : 'none';
+    filterWithExampleBtn.style.display = showListControls ? '' : 'none';
+    const showReverse = ['list', 'flash', 'mcq', 'input'].includes(currentView);
+    reverseModeBtn.style.display = showReverse ? '' : 'none';
+}
 
-function showView(view){ currentView=view; document.querySelectorAll('.view-tabs .pill').forEach(b=>b.classList.remove('active')); if(view==='list'){ viewListBtn.classList.add('active'); listView.classList.remove('d-none'); flashView.classList.add('d-none'); mcqView.classList.add('d-none'); renderList(); } if(view==='flash'){ viewFlashBtn.classList.add('active'); listView.classList.add('d-none'); flashView.classList.remove('d-none'); mcqView.classList.add('d-none'); startFlash(); } if(view==='mcq'){ viewMCQBtn.classList.add('active'); listView.classList.add('d-none'); flashView.classList.add('d-none'); mcqView.classList.remove('d-none'); startMCQ(); } updateGlobalControlsVisibility(); }
+function showView(view){ currentView=view; document.querySelectorAll('.view-tabs .pill').forEach(b=>b.classList.remove('active'));
+    const views = {
+        list: { btn: viewListBtn, el: listView },
+        flash: { btn: viewFlashBtn, el: flashView },
+        mcq: { btn: viewMCQBtn, el: mcqView },
+        input: { btn: viewInputBtn, el: inputView }
+    };
+    for (const v in views) {
+        views[v].el.classList.add('d-none');
+    }
+    if (views[view]) {
+        views[view].btn.classList.add('active');
+        views[view].el.classList.remove('d-none');
+    }
+    if (view === 'list') renderList();
+    if (view === 'flash') startFlash();
+    if (view === 'mcq') startMCQ();
+    if (view === 'input') startInput();
+    updateGlobalControlsVisibility();
+}
 
 function showExercises(){ studySection.classList.add('d-none'); exercisesSection.classList.remove('d-none'); renderExercises(); }
 function showStudy(){ exercisesSection.classList.add('d-none'); studySection.classList.remove('d-none'); }
 
 function shuffleArray(arr){ for(let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]]; } }
-function pickDistractors(correct,items,n){ const pool=items.map(x=>x.pl).filter(p=>p!==correct); shuffleArray(pool); return pool.slice(0,n); }
+function pickDistractors(correct, items, n, isReverse) { const pool = items.map(x => (isReverse ? x.en : x.pl)).filter(p => p !== correct); shuffleArray(pool); return pool.slice(0, n); }
 
 function storageId(level,category,en){ return `voc:${level}:${category}:${en}`; }
 function markKnown(en){ localStorage.setItem(storageId(currentLevel,currentCategory,en),'1'); renderProgress(); }
@@ -254,20 +316,86 @@ filterKnownBtn.addEventListener('click', ()=> setFilter('known'));
 filterWithExampleBtn.addEventListener('click', ()=>{ filterExamplesOnly = !filterExamplesOnly; filterWithExampleBtn.classList.toggle('active', filterExamplesOnly); renderCounts(); renderView(); });
 function setFilter(m){ filterMode=m; [filterAllBtn,filterUnknownBtn,filterKnownBtn].forEach(b=>b.classList.remove('active')); if(m==='all') filterAllBtn.classList.add('active'); if(m==='unknown') filterUnknownBtn.classList.add('active'); if(m==='known') filterKnownBtn.classList.add('active'); renderCounts(); rebuildListOrder(); renderView(); }
 
+// ===== INPUT VIEW =====
+function startInput() {
+    inputPool = getFilteredItems();
+    shuffleArray(inputPool);
+    inputIdx = 0;
+    renderInput();
+}
+
+function renderInput() {
+    const item = inputPool[inputIdx % (inputPool.length || 1)];
+    if (!item) {
+        inputQuestion.textContent = '(brak pytań)';
+        return;
+    }
+    const { en, pl } = item;
+    inputQuestion.textContent = reverseMode ? pl : en;
+    inputCorrect = reverseMode ? en : pl;
+
+    inputAnswer.value = '';
+    inputAnswer.disabled = false;
+    inputAnswer.classList.remove('correct', 'wrong');
+    inputCorrectAnswer.style.display = 'none';
+    inputCheckBtn.style.display = '';
+    inputNextBtn.style.display = 'none';
+    inputAnswer.focus();
+}
+
+function checkInputAnswer() {
+    const userAnswer = inputAnswer.value.trim();
+    if (userAnswer === '') return;
+
+    inputAnswer.disabled = true;
+    inputCheckBtn.style.display = 'none';
+    inputNextBtn.style.display = '';
+    seenCount++;
+
+    if (userAnswer.toLowerCase() === inputCorrect.toLowerCase()) {
+        inputAnswer.classList.add('correct');
+        correctCount++;
+        const item = inputPool[inputIdx % inputPool.length];
+        if (item) markKnown(item.en);
+    } else {
+        inputAnswer.classList.add('wrong');
+        inputCorrectAnswer.textContent = `Poprawna odpowiedź: ${inputCorrect}`;
+        inputCorrectAnswer.style.display = 'block';
+    }
+    updateStats();
+    inputNextBtn.focus();
+}
+
 // View tabs
 viewListBtn.addEventListener('click', ()=> showView('list'));
 viewFlashBtn.addEventListener('click', ()=> showView('flash'));
 viewMCQBtn.addEventListener('click', ()=> showView('mcq'));
+viewInputBtn.addEventListener('click', () => showView('input'));
 
 // MCQ next handler
 mcqNext.addEventListener('click', ()=>{ if(!mcqPool || !mcqPool.length) return; mcqIdx = (mcqIdx+1) % mcqPool.length; renderMCQ(); });
+mcqSpeakBtn.addEventListener('click', () => { const cur = mcqPool[mcqIdx % mcqPool.length]; if(cur) speak(cur.en); });
 
 // Global controls
+reverseModeBtn.addEventListener('click', () => {
+  reverseMode = !reverseMode;
+  reverseModeBtn.innerHTML = reverseMode ? '<i class="bi bi-arrow-left-right me-1"></i> EN ➔ PL' : '<i class="bi bi-arrow-left-right me-1"></i> PL ➔ EN';
+  reverseModeBtn.classList.toggle('active', reverseMode);
+  renderView();
+});
 togglePLBtn.addEventListener('click', ()=>{ showPL = !showPL; togglePLBtn.classList.toggle('active', showPL); togglePLBtn.innerHTML = showPL ? '<i class="bi bi-translate me-1"></i>Ukryj tłumaczenia' : '<i class="bi bi-translate me-1"></i>Pokaż tłumaczenia'; if(currentView==='list') renderList(); if(currentView==='flash'){ flashTrans.style.display = showPL ? 'block':'none'; } });
 shuffleBtn.addEventListener('click', ()=>{ if(currentView==='list'){ rebuildListOrder(); renderList(); } if(currentView==='flash'){ startFlash(); } if(currentView==='mcq'){ startMCQ(); } });
 
 // Flash buttons
 flashShow.addEventListener('click', ()=>{ flashTrans.style.display = (flashTrans.style.display==='none'?'block':'none'); });
+flashSpeakBtn.addEventListener('click', () => { const cur = flashItems[flashIdx % flashItems.length]; if(cur) speak(cur.en); });
+inputCheckBtn.addEventListener('click', checkInputAnswer);
+inputNextBtn.addEventListener('click', () => {
+    inputIdx = (inputIdx + 1) % (inputPool.length || 1);
+    renderInput();
+});
+inputSpeakBtn.addEventListener('click', () => { const cur = inputPool[inputIdx % inputPool.length]; if (cur) speak(cur.en); });
+
 smAgain.addEventListener('click', ()=>{ sm2Review(1); nextFlash(); renderCounts(); });
 smHard .addEventListener('click', ()=>{ sm2Review(3); nextFlash(); renderCounts(); });
 smGood .addEventListener('click', ()=>{ sm2Review(4); nextFlash(); renderCounts(); });
@@ -291,19 +419,37 @@ document.addEventListener('keydown', (e)=>{
     else if (e.key==='2'){ e.preventDefault(); smHard.click(); }
     else if (e.key==='3'){ e.preventDefault(); smGood.click(); }
     else if (e.key==='4'){ e.preventDefault(); smEasy.click(); }
+    else if (e.key.toLowerCase()==='s'){ e.preventDefault(); flashSpeakBtn.click(); }
     else if (e.key.toLowerCase()==='f'){ e.preventDefault(); toggleFullscreen(document.getElementById('flashCard')); }
   } else if (currentView==='mcq'){
     if (e.key==='ArrowRight' || e.key==='Enter'){ e.preventDefault(); mcqNext.click(); }
     else if (['1','2','3','4'].includes(e.key)){
       const btn = [...mcqOptions.children].find(b=> b.dataset.index===e.key);
       if (btn) { e.preventDefault(); btn.click(); }
-    } else if (e.key.toLowerCase()==='f'){ e.preventDefault(); toggleFullscreen(document.getElementById('mcqCard')); }
+    } else if (e.key.toLowerCase()==='s'){ e.preventDefault(); mcqSpeakBtn.click(); }
+    else if (e.key.toLowerCase()==='f'){ e.preventDefault(); toggleFullscreen(document.getElementById('mcqCard')); }
+  } else if (currentView === 'input') {
+      if (e.key === 'Enter') {
+          e.preventDefault();
+          if (inputCheckBtn.style.display !== 'none') {
+              inputCheckBtn.click();
+          } else {
+              inputNextBtn.click();
+          }
+      } else if (e.key.toLowerCase() === 's') {
+          e.preventDefault();
+          inputSpeakBtn.click();
+      } else if (e.key.toLowerCase() === 'f') {
+          e.preventDefault();
+          toggleFullscreen(document.getElementById('inputCard'));
+      }
   }
 });
 
 // Fullscreen buttons
 flashFs.addEventListener('click', ()=> toggleFullscreen(document.getElementById('flashCard')));
 mcqFs.addEventListener('click', ()=> toggleFullscreen(document.getElementById('mcqCard')));
+inputFs.addEventListener('click', () => toggleFullscreen(document.getElementById('inputCard')));
 
 function toggleFullscreen(el){
   if (!document.fullscreenElement){ el.requestFullscreen?.(); el.classList.add('fs-active'); }
@@ -312,8 +458,11 @@ function toggleFullscreen(el){
 
 document.addEventListener('fullscreenchange', ()=>{
   const inFs = !!document.fullscreenElement;
-  flashFs.innerHTML = inFs ? '<i class="bi bi-fullscreen-exit"></i> Wyjdź' : '<i class="bi bi-arrows-fullscreen"></i> Pełny ekran';
-  mcqFs.innerHTML   = inFs ? '<i class="bi bi-fullscreen-exit"></i> Wyjdź' : '<i class="bi bi-arrows-fullscreen"></i> Pełny ekran';
+  const exitHTML = '<i class="bi bi-fullscreen-exit"></i> Wyjdź';
+  const enterHTML = '<i class="bi bi-arrows-fullscreen"></i> Pełny ekran';
+  flashFs.innerHTML = inFs ? exitHTML : enterHTML;
+  mcqFs.innerHTML   = inFs ? exitHTML : enterHTML;
+  inputFs.innerHTML = inFs ? exitHTML : enterHTML;
 });
 
 // Search
