@@ -379,11 +379,10 @@ mcqSpeakBtn.addEventListener('click', () => { const cur = mcqPool[mcqIdx % mcqPo
 // Global controls
 reverseModeBtn.addEventListener('click', () => {
   reverseMode = !reverseMode;
-  reverseModeBtn.innerHTML = reverseMode ? '<i class="bi bi-arrow-left-right me-1"></i> EN ➔ PL' : '<i class="bi bi-arrow-left-right me-1"></i> PL ➔ EN';
   reverseModeBtn.classList.toggle('active', reverseMode);
   renderView();
 });
-togglePLBtn.addEventListener('click', ()=>{ showPL = !showPL; togglePLBtn.classList.toggle('active', showPL); togglePLBtn.innerHTML = showPL ? '<i class="bi bi-translate me-1"></i>Ukryj tłumaczenia' : '<i class="bi bi-translate me-1"></i>Pokaż tłumaczenia'; if(currentView==='list') renderList(); if(currentView==='flash'){ flashTrans.style.display = showPL ? 'block':'none'; } });
+togglePLBtn.addEventListener('click', ()=>{ showPL = !showPL; togglePLBtn.classList.toggle('active', !showPL); if(currentView==='list') renderList(); if(currentView==='flash'){ flashTrans.style.display = showPL ? 'block':'none'; } });
 shuffleBtn.addEventListener('click', ()=>{ if(currentView==='list'){ rebuildListOrder(); renderList(); } if(currentView==='flash'){ startFlash(); } if(currentView==='mcq'){ startMCQ(); } });
 
 // Flash buttons

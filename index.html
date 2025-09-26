@@ -19,18 +19,12 @@
     <header class="app-header glass">
         <div class="brand">
             <div class="logo"></div>
-            <div>
-                <div class="title brand title">Nauka słówek • A2 / B1 / B2</div>
-            </div>
+            <h1 class="title">Nauka słówek <span class="subtle" style="font-weight: 400;">A2 / B1 / B2</span></h1>
         </div>
     </header>
 
-    <section class="hero glass">
-        <h1>Nauka słówek</h1>
-    </section>
-
     <main class="layout">
-        <aside class="glass p-3">
+        <aside class="glass">
             <div class="levels mb-3" id="levels"></div>
             <div class="position-relative mb-3 search">
                 <i class="bi bi-search icon"></i>
@@ -41,7 +35,7 @@
             <button class="level-btn w-100 mt-2" id="exercisesTab">Ćwiczenia</button>
         </aside>
 
-        <section class="glass p-3">
+        <section class="glass">
             <!-- STUDY (Lista/Fiszki/MCQ) -->
             <div id="studySection">
                 <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
@@ -50,21 +44,23 @@
                         <div class="subtle small">Widoczne:
                             <span id="visibleCount">0</span>/<span id="totalCount">0</span></div>
                     </div>
-                    <div class="d-flex flex-column align-items-end gap-2">
-                        <div class="view-tabs">
-                            <button class="pill" data-view="list" id="viewList"><i class="bi bi-list-ul"></i> Lista</button>
-                            <button class="pill" data-view="flash" id="viewFlash"><i class="bi bi-layers"></i> Fiszki</button>
-                            <button class="pill" data-view="mcq" id="viewMCQ"><i class="bi bi-ui-radios-grid"></i> Test ABC</button>
-                            <button class="pill" data-view="input" id="viewInput"><i class="bi bi-keyboard"></i> Wpisz</button>
+                    <div class="controls-wrapper">
+                        <div class="control-group view-tabs">
+                            <button class="pill" data-view="list" id="viewList" title="Widok listy"><i class="bi bi-list-ul"></i> Lista</button>
+                            <button class="pill" data-view="flash" id="viewFlash" title="Fiszki"><i class="bi bi-layers"></i> Fiszki</button>
+                            <button class="pill" data-view="mcq" id="viewMCQ" title="Test jednokrotnego wyboru"><i class="bi bi-ui-radios-grid"></i> Test ABC</button>
+                            <button class="pill" data-view="input" id="viewInput" title="Wpisywanie odpowiedzi"><i class="bi bi-keyboard"></i> Wpisz</button>
                         </div>
-                        <div class="d-flex gap-2 flex-wrap">
-                            <button class="pill" id="reverseMode" title="Zmień kierunek (PL ↔ EN)"><i class="bi bi-arrow-left-right me-1"></i> PL ➔ EN</button>
-                            <button class="pill" id="togglePL"><i class="bi bi-translate me-1"></i>Ukryj tłumaczenia</button>
-                            <button class="pill" id="shuffle"><i class="bi bi-shuffle me-1"></i>Wymieszaj</button>
-                            <button class="pill" id="filterAll" title="Wszystkie"><i class="bi bi-funnel"></i> Wszystkie</button>
-                            <button class="pill" id="filterUnknown" title="Tylko nieznane"><i class="bi bi-emoji-frown"></i> Nieznane</button>
-                            <button class="pill" id="filterKnown" title="Tylko znane"><i class="bi bi-emoji-smile"></i> Znane</button>
-                            <button class="pill" id="filterWithExample" title="Tylko te, które mają przykłady"><i class="bi bi-journal-text me-1"></i> Tylko z przykładem</button>
+                        <div class="control-group">
+                            <button class="pill" id="reverseMode" title="Zmień kierunek (PL ↔ EN)"><i class="bi bi-arrow-left-right"></i></button>
+                            <button class="pill" id="togglePL" title="Pokaż/ukryj tłumaczenia"><i class="bi bi-translate"></i></button>
+                            <button class="pill" id="shuffle" title="Wymieszaj"><i class="bi bi-shuffle"></i></button>
+                        </div>
+                        <div class="control-group">
+                            <button class="pill" id="filterAll" title="Wszystkie"><i class="bi bi-funnel"></i></button>
+                            <button class="pill" id="filterUnknown" title="Tylko nieznane"><i class="bi bi-emoji-frown"></i></button>
+                            <button class="pill" id="filterKnown" title="Tylko znane"><i class="bi bi-emoji-smile"></i></button>
+                            <button class="pill" id="filterWithExample" title="Tylko z przykładem"><i class="bi bi-journal-text"></i></button>
                         </div>
                     </div>
                 </div>
