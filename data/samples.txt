@@ -774,3 +774,103 @@ B2;Środowisko naturalne;urbanization;urbanizacja;Urbanization changes natural l
 B2;Środowisko naturalne;industrialization;industrializacja;Industrialization led to economic growth.;Industrializacja doprowadziła do wzrostu gospodarczego.
 B2;Środowisko naturalne;green technology;zielona technologia;Green technology helps to reduce emissions.;Zielona technologia pomaga zmniejszyć emisje.
 B2;Środowisko naturalne;eco-friendly product;produkt ekologiczny;They sell eco-friendly products in the store.;W sklepie sprzedają produkty ekologiczne.
+B1;Czas wolny i hobby;hobby;hobby;My favorite hobby is reading books.;Moim ulubionym hobby jest czytanie książek.
+B1;Czas wolny i hobby;painting;malarstwo;She is very good at painting landscapes.;Ona jest bardzo dobra w malowaniu pejzaży.
+B1;Czas wolny i hobby;drawing;rysowanie;Drawing helps me relax after a long day.;Rysowanie pomaga mi się zrelaksować po długim dniu.
+B1;Czas wolny i hobby;photography;fotografia;He is taking a course in photography.;On uczęszcza na kurs fotografii.
+B1;Czas wolny i hobby;dancing;taniec;They go dancing every Saturday night.;Oni chodzą tańczyć w każdą sobotnią noc.
+B1;Czas wolny i hobby;singing;śpiewanie;Singing in a choir is her passion.;Śpiewanie w chórze to jej pasja.
+B1;Czas wolny i hobby;gardening;ogrodnictwo;Gardening can be a very rewarding activity.;Ogrodnictwo może być bardzo satysfakcjonującym zajęciem.
+B1;Czas wolny i hobby;hiking;wędrówki;We went hiking in the mountains last weekend.;W zeszły weekend poszliśmy na wędrówkę w góry.
+B1;Czas wolny i hobby;camping;kemping;Camping is a great way to connect with nature.;Kemping to świetny sposób na połączenie się z naturą.
+B1;Czas wolny i hobby;fishing;wędkarstwo;My grandfather taught me how to go fishing.;Mój dziadek nauczył mnie łowić ryby.
+A2;Sport;football;piłka nożna;Many people around the world love watching football.;Wiele osób na całym świecie uwielbia oglądać piłkę nożną.
+A2;Sport;basketball;koszykówka;He plays basketball for the school team.;On gra w koszykówkę w szkolnej drużynie.
+A2;Sport;volleyball;siatkówka;They play volleyball on the beach every summer.;Oni co lato grają w siatkówkę na plaży.
+A2;Sport;tennis;tenis;She is taking tennis lessons twice a week.;Ona bierze lekcje tenisa dwa razy w tygodniu.
+A2;Sport;swimming;pływanie;Swimming is a great exercise for the whole body.;Pływanie to świetne ćwiczenie na całe ciało.
+A2;Sport;running;bieganie;He goes running in the park every morning.;On co rano biega w parku.
+A2;Sport;cycling;kolarstwo;Cycling is an environmentally friendly way to travel.;Kolarstwo to przyjazny dla środowiska sposób podróżowania.
+A2;Sport;skiing;narciarstwo;They go skiing in the Alps every winter.;Oni co zimę jeżdżą na narty w Alpy.
+A2;Sport;match;mecz;The football match was very exciting.;Mecz piłki nożnej był bardzo ekscytujący.
+A2;Sport;team;drużyna;Our team won the championship last year.;Nasza drużyna wygrała mistrzostwa w zeszłym roku.
+A2;Ubrania;t-shirt;koszulka;He is wearing a white t-shirt and blue jeans.;On ma na sobie białą koszulkę i niebieskie dżinsy.
+A2;Ubrania;trousers;spodnie;I need to buy new trousers for work.;Muszę kupić nowe spodnie do pracy.
+A2;Ubrania;dress;sukienka;She wore a beautiful dress to the party.;Ona założyła piękną sukienkę na imprezę.
+A2;Ubrania;skirt;spódnica;This skirt is too short for me.;Ta spódnica jest dla mnie za krótka.
+A2;Ubrania;shoes;buty;Don't forget to clean your shoes.;Nie zapomnij wyczyścić butów.
+A2;Ubrania;socks;skarpetki;I can't find my other pair of socks.;Nie mogę znaleźć mojej drugiej pary skarpetek.
+A2;Ubrania;jacket;kurtka;It's cold outside, you should wear a jacket.;Na zewnątrz jest zimno, powinieneś założyć kurtkę.
+A2;Ubrania;coat;płaszcz;She bought a new coat for the winter.;Ona kupiła nowy płaszcz na zimę.
+A2;Ubrania;hat;kapelusz;He always wears a hat when it's sunny.;On zawsze nosi kapelusz, gdy jest słonecznie.
+A2;Ubrania;gloves;rękawiczki;My hands are cold, I need to find my gloves.;Moje ręce są zimne, muszę znaleźć rękawiczki.
+A2;Pogoda;sun;słońce;The sun is shining brightly today.;Słońce dzisiaj jasno świeci.
+A2;Pogoda;rain;deszcz;I think it's going to rain soon.;Myślę, że wkrótce będzie padać.
+A2;Pogoda;snow;śnieg;The children are playing in the snow.;Dzieci bawią się na śniegu.
+A2;Pogoda;wind;wiatr;The wind is blowing very strongly.;Wiatr wieje bardzo mocno.
+A2;Pogoda;cloud;chmura;There isn't a single cloud in the sky.;Na niebie nie ma ani jednej chmury.
+A2;Pogoda;storm;burza;The storm caused a lot of damage.;Burza spowodowała wiele szkód.
+A2;Pogoda;sunny;słonecznie;It was a beautiful sunny day.;To był piękny, słoneczny dzień.
+A2;Pogoda;rainy;deszczowo;I don't like rainy weather.;Nie lubię deszczowej pogody.
+A2;Pogoda;windy;wietrznie;It's too windy to go for a walk.;Jest zbyt wietrznie, żeby iść na spacer.
+A2;Pogoda;cold;zimno;It's very cold today, you should dress warmly.;Dziś jest bardzo zimno, powinieneś się ciepło ubrać.
+A2;Ciało;head;głowa;I have a pain in my head.;Boli mnie głowa.
+A2;Ciało;arm;ramię;He broke his arm while playing football.;On złamał rękę podczas gry w piłkę nożną.
+A2;Ciało;leg;noga;My leg hurts after running.;Boli mnie noga po bieganiu.
+A2;Ciało;hand;dłoń;Please wash your hands before dinner.;Proszę umyj ręce przed obiadem.
+A2;Ciało;foot;stopa;I have a blister on my foot.;Mam pęcherz na stopie.
+A2;Ciało;eye;oko;She has beautiful blue eyes.;Ona ma piękne niebieskie oczy.
+A2;Ciało;nose;nos;My nose is running because of the cold.;Cieknie mi z nosa z powodu przeziębienia.
+A2;Ciało;mouth;usta;Don't talk with your mouth full.;Nie mów z pełnymi ustami.
+A2;Ciało;ear;ucho;I have an infection in my right ear.;Mam infekcję w prawym uchu.
+A2;Ciało;hair;włosy;She has long, dark hair.;Ona ma długie, ciemne włosy.
+A2;Zwierzęta;dog;pies;My dog loves to play fetch.;Mój pies uwielbia aportować.
+A2;Zwierzęta;cat;kot;The cat is sleeping on the sofa.;Kot śpi na kanapie.
+A2;Zwierzęta;bird;ptak;A small bird is singing on the branch.;Mały ptak śpiewa na gałęzi.
+A2;Zwierzęta;horse;koń;She learned to ride a horse when she was a child.;Ona nauczyła się jeździć konno, gdy była dzieckiem.
+A2;Zwierzęta;cow;krowa;The cow is eating grass in the field.;Krowa je trawę na polu.
+A2;Zwierzęta;sheep;owca;The farmer has a lot of sheep.;Rolnik ma dużo owiec.
+A2;Zwierzęta;pig;świnia;The pig is rolling in the mud.;Świnia tarza się w błocie.
+A2;Zwierzęta;lion;lew;The lion is the king of the jungle.;Lew jest królem dżungli.
+A2;Zwierzęta;tiger;tygrys;The tiger is a very dangerous animal.;Tygrys to bardzo niebezpieczne zwierzę.
+A2;Zwierzęta;bear;niedźwiedź;We saw a bear in the forest.;Widzieliśmy niedźwiedzia w lesie.
+B1;Zakupy;shop;sklep;I need to go to the shop to buy some milk.;Muszę iść do sklepu kupić mleko.
+B1;Zakupy;market;targ;We buy fresh vegetables at the market.;Kupujemy świeże warzywa na targu.
+B1;Zakupy;price;cena;The price of this dress is too high.;Cena tej sukienki jest za wysoka.
+B1;Zakupy;money;pieniądze;I don't have enough money to buy it.;Nie mam wystarczająco pieniędzy, żeby to kupić.
+B1;Zakupy;cash;gotówka;Do you prefer to pay by cash or credit card?;Wolisz płacić gotówką czy kartą kredytową?
+B1;Zakupy;credit card;karta kredytowa;I lost my credit card yesterday.;Wczoraj zgubiłem kartę kredytową.
+B1;Zakupy;receipt;paragon;Don't forget to take the receipt.;Nie zapomnij wziąć paragonu.
+B1;Zakupy;discount;zniżka;Is there a discount for students?;Czy jest zniżka dla studentów?
+B1;Zakupy;customer;klient;The customer is always right.;Klient ma zawsze rację.
+B1;Zakupy;sale;wyprzedaż;I bought these shoes on sale.;Kupiłem te buty na wyprzedaży.
+B1;Uczucia i emocje;happy;szczęśliwy;She was very happy to see her friends.;Ona była bardzo szczęśliwa, że widzi swoich przyjaciół.
+B1;Uczucia i emocje;sad;smutny;He was sad because he lost his favorite toy.;Był smutny, bo zgubił swoją ulubioną zabawkę.
+B1;Uczucia i emocje;angry;zły;She was angry with him for being late.;Była na niego zła za spóźnienie.
+B1;Uczucia i emocje;tired;zmęczony;I'm too tired to go out tonight.;Jestem zbyt zmęczony, żeby dziś wieczorem wychodzić.
+B1;Uczucia i emocje;surprised;zaskoczony;He was surprised to see her at the party.;Był zaskoczony, widząc ją na imprezie.
+B1;Uczucia i emocje;scared;przestraszony;The little girl was scared of the dog.;Mała dziewczynka bała się psa.
+B1;Uczucia i emocje;love;miłość;Love is a beautiful feeling.;Miłość to piękne uczucie.
+B1;Uczucia i emocje;hate;nienawiść;Hate is a very destructive emotion.;Nienawiść to bardzo destrukcyjne uczucie.
+B1;Uczucia i emocje;joy;radość;Her face was full of joy.;Jej twarz była pełna radości.
+B1;Uczucia i emocje;fear;strach;He has a fear of heights.;On ma lęk wysokości.
+B2;Praca i zawody;accountant;księgowy/księgowa;An accountant helps with financial records.;Księgowy pomaga w prowadzeniu dokumentacji finansowej.
+B2;Praca i zawody;architect;architekt;The architect designed a new modern house.;Architekt zaprojektował nowy, nowoczesny dom.
+B2;Praca i zawody;engineer;inżynier;The engineer is working on a new bridge project.;Inżynier pracuje nad projektem nowego mostu.
+B2;Praca i zawody;mechanic;mechanik;The mechanic is fixing my car.;Mechanik naprawia mój samochód.
+B2;Praca i zawody;plumber;hydraulik;We need to call a plumber to fix the leak.;Musimy wezwać hydraulika, żeby naprawił wyciek.
+B2;Praca i zawody;electrician;elektryk;The electrician is installing new lights.;Elektryk instaluje nowe oświetlenie.
+B2;Praca i zawody;firefighter;strażak;The firefighter rescued the cat from the tree.;Strażak uratował kota z drzewa.
+B2;Praca i zawody;police officer;policjant/policjantka;The police officer helped us find the way.;Policjant pomógł nam znaleźć drogę.
+B2;Praca i zawody;lawyer;prawnik/prawniczka;She is a very successful lawyer.;Ona jest bardzo skutecznym prawnikiem.
+B2;Praca i zawody;judge;sędzia;The judge made a final decision in the case.;Sędzia podjął ostateczną decyzję w sprawie.
+B2;Technologia;smartphone;smartfon;I use my smartphone for everything.;Używam smartfona do wszystkiego.
+B2;Technologia;laptop;laptop;My laptop is very old and slow.;Mój laptop jest bardzo stary i wolny.
+B2;Technologia;tablet;tablet;She likes to read books on her tablet.;Ona lubi czytać książki na swoim tablecie.
+B2;Technologia;keyboard;klawiatura;My keyboard is not working properly.;Moja klawiatura nie działa prawidłowo.
+B2;Technologia;mouse;mysz (komputerowa);I need a new mouse for my computer.;Potrzebuję nowej myszki do komputera.
+B2;Technologia;screen;ekran;The screen of my phone is cracked.;Ekran mojego telefonu jest pęknięty.
+B2;Technologia;printer;drukarka;I need to print this document.;Muszę wydrukować ten dokument.
+B2;Technologia;charger;ładowarka;I forgot to bring my phone charger.;Zapomniałem zabrać ładowarki do telefonu.
+B2;Technologia;headphones;słuchawki;I like to listen to music with my headphones.;Lubię słuchać muzyki przez słuchawki.
+B2;Technologia;speaker;głośnik;The speaker is not very loud.;Głośnik nie jest zbyt głośny.
