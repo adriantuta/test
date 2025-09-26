@@ -1,14 +1,776 @@
-Poziom;Kategoria;English;Polski;English Sample;Polish Sample
-A2;Jedzenie;an apple;jabłko;"I eat an apple every day.";"Codziennie jem jabłko."
-A2;Jedzenie;bread;chleb;"Can you buy some bread?";"Czy możesz kupić chleb?"
-A2;Dom;a window;okno;"The cat is sitting by the window.";"Kot siedzi przy oknie."
-A2;Dom;a bed;łóżko;"I go to bed at 11 PM.";"Idę spać o 23:00."
-A2;Zwierzęta;a cat;kot;"My cat is black and white.";"Mój kot jest czarno-biały."
-A2;Czynności;to read;czytać;"I love to read books.";"Uwielbiam czytać książki."
-B1;Praca;a salary;pensja;"He is not happy with his salary.";"On nie jest zadowolony ze swojej pensji."
-B1;Praca;a deadline;termin ostateczny;"We have to meet the deadline.";"Musimy dotrzymać terminu."
-B1;Podróże;a passport;paszport;"Don't forget your passport.";"Nie zapomnij paszportu."
-B1;Zdrowie;a headache;ból głowy;"I have a terrible headache.";"Mam okropny ból głowy."
-B2;Technologia;a database;baza danych;"The information is stored in a database.";"Informacje są przechowywane w bazie danych."
-B2;Nauka;research;badania naukowe;"Their research is very promising.";"Ich badania są bardzo obiecujące."
-B2;Biznes;an investment;inwestycja;"This was a very good investment.";"To była bardzo dobra inwestycja."
+Poziom;Kategoria;English;Polski;English Sample;Translate English sample
+A2;Rodzina i znajomi;mother;matka;My mother is the kindest person I know.;Moja mama jest najmilszą osobą, jaką znam.
+A2;Rodzina i znajomi;father;ojciec;Yesterday my father fixed the broken chair.;Wczoraj mój tata naprawił zepsute krzesło.
+A2;Rodzina i znajomi;sister;siostra;Does your sister like reading adventure books?;Czy twoja siostra lubi czytać książki przygodowe?
+A2;Rodzina i znajomi;brother;brat;My brother will visit me next weekend.;Mój brat odwiedzi mnie w przyszły weekend.
+A2;Rodzina i znajomi;grandmother;babcia;I think my grandmother cooks better than anyone else.;Uważam, że moja babcia gotuje lepiej niż ktokolwiek inny.
+A2;Rodzina i znajomi;grandfather;dziadek;My grandfather often tells me funny jokes.;Mój dziadek często opowiada mi zabawne kawały.
+A2;Rodzina i znajomi;aunt;ciocia;My aunt is coming to our house for Christmas dinner.;Moja ciocia przyjeżdża do nas na kolację wigilijną.
+A2;Rodzina i znajomi;uncle;wujek;Is your uncle coming to the wedding?;Czy twój wujek przyjedzie na wesele?
+A2;Rodzina i znajomi;cousin;kuzyn/kuzynka;My cousin and I went to the cinema yesterday.;Wczoraj poszedłem do kina z kuzynem.
+A2;Rodzina i znajomi;parents;rodzice;My parents don’t let me go out late at night.;Moi rodzice nie pozwalają mi wychodzić późno w nocy.
+A2;Rodzina i znajomi;child;dziecko;The child fell asleep during the car ride.;Dziecko zasnęło podczas jazdy samochodem.
+A2;Rodzina i znajomi;children;dzieci;Children usually love playing outside in summer.;Dzieci zazwyczaj uwielbiają bawić się na dworze latem.
+A2;Rodzina i znajomi;friend;przyjaciel;I met an old friend from school yesterday.;Wczoraj spotkałem starego kolegę ze szkoły.
+A2;Rodzina i znajomi;best friend;najlepszy przyjaciel;My best friend knows all my secrets.;Mój najlepszy przyjaciel zna wszystkie moje sekrety.
+A2;Rodzina i znajomi;neighbor;sąsiad;Our neighbor invited us to his garden party.;Nasz sąsiad zaprosił nas na imprezę w ogrodzie.
+A2;Rodzina i znajomi;classmate;kolega/koleżanka z klasy;One of my classmates is very good at maths.;Jeden z moich kolegów z klasy jest bardzo dobry z matematyki.
+A2;Rodzina i znajomi;boyfriend;chłopak;Her boyfriend gave her flowers for her birthday.;Jej chłopak dał jej kwiaty na urodziny.
+A2;Rodzina i znajomi;girlfriend;dziewczyna;His girlfriend studies medicine at university.;Jego dziewczyna studiuje medycynę na uniwersytecie.
+A2;Rodzina i znajomi;husband;mąż;Her husband works in another city during the week.;Jej mąż pracuje w innym mieście w ciągu tygodnia.
+A2;Rodzina i znajomi;wife;żona;Tomorrow my wife will travel to Paris on business.;Jutro moja żona poleci służbowo do Paryża.
+A2;Rodzina i znajomi;family;rodzina;Families often spend Sundays together at home.;Rodziny często spędzają niedziele razem w domu.
+A2;Rodzina i znajomi;relative;krewny;We are going to visit our relatives in the countryside.;Jedziemy odwiedzić naszych krewnych na wsi.
+A2;Rodzina i znajomi;twins;bliźnięta;The twins are wearing the same red jackets.;Bliźnięta mają na sobie takie same czerwone kurtki.
+A2;Rodzina i znajomi;baby;niemowlę;The baby cried all night and nobody slept.;Niemowlę płakało całą noc i nikt nie spał.
+A2;Rodzina i znajomi;teenager;nastolatek;Teenagers often use their phones too much.;Nastolatki często za dużo korzystają ze swoich telefonów.
+A2;Rodzina i znajomi;adult;dorosły;Adults usually drink coffee in the morning.;Dorośli zazwyczaj piją kawę rano.
+A2;Rodzina i znajomi;old man;starszy pan;The old man is walking slowly with a stick.;Starszy pan idzie powoli o lasce.
+A2;Rodzina i znajomi;old woman;starsza pani;An old woman was selling flowers on the street.;Starsza pani sprzedawała kwiaty na ulicy.
+A2;Rodzina i znajomi;colleague;współpracownik;My colleague helped me finish the report on time.;Mój współpracownik pomógł mi skończyć raport na czas.
+A2;Rodzina i znajomi;partner;partner;She is looking for a new tennis partner.;Ona szuka nowego partnera do tenisa.
+A2;Rodzina i znajomi;stepmother;macocha;His stepmother treated him with kindness.;Jego macocha traktowała go z życzliwością.
+A2;Rodzina i znajomi;stepfather;ojczym;My stepfather showed me how to fix the bike chain.;Mój ojczym pokazał mi, jak naprawić łańcuch w rowerze.
+A2;Rodzina i znajomi;stepsister;przyrodnia siostra;My stepsister wants to become a singer.;Moja przyrodnia siostra chce zostać piosenkarką.
+A2;Rodzina i znajomi;stepbrother;przyrodni brat;Her stepbrother is very good at swimming.;Jej przyrodni brat jest bardzo dobry w pływaniu.
+A2;Rodzina i znajomi;half-sister;siostra przyrodnia;My half-sister lives in Germany now.;Moja siostra przyrodnia mieszka teraz w Niemczech.
+A2;Rodzina i znajomi;half-brother;brat przyrodni;Do you know if his half-brother plays football?;Czy wiesz, czy jego brat przyrodni gra w piłkę nożną?
+A2;Rodzina i znajomi;in-laws;teściowie;I spent last weekend with my in-laws.;Spędziłem ostatni weekend z teściami.
+A2;Rodzina i znajomi;mother-in-law;teściowa;My mother-in-law makes delicious cakes.;Moja teściowa robi pyszne ciasta.
+A2;Rodzina i znajomi;father-in-law;teść;My father-in-law enjoys watching football on TV.;Mój teść lubi oglądać piłkę nożną w telewizji.
+A2;Rodzina i znajomi;son;syn;Their son wants to be a doctor when he grows up.;Ich syn chce zostać lekarzem, gdy dorośnie.
+A2;Rodzina i znajomi;daughter;córka;Her daughter is drawing pictures in her room.;Jej córka rysuje obrazki w swoim pokoju.
+A2;Rodzina i znajomi;niece;siostrzenica/bratanica;My niece is learning how to ride a bike.;Moja siostrzenica uczy się jeździć na rowerze.
+A2;Rodzina i znajomi;nephew;siostrzeniec/bratanek;My nephew told me a funny story yesterday.;Mój siostrzeniec opowiedział mi wczoraj zabawną historię.
+A2;Rodzina i znajomi;grandson;wnuk;The grandson often plays chess with his grandfather.;Wnuk często gra w szachy ze swoim dziadkiem.
+A2;Rodzina i znajomi;granddaughter;wnuczka;The granddaughter is helping her grandmother bake cookies.;Wnuczka pomaga swojej babci piec ciastka.
+A2;Rodzina i znajomi;godmother;matka chrzestna;His godmother gave him a wonderful book.;Jego matka chrzestna dała mu wspaniałą książkę.
+A2;Rodzina i znajomi;godfather;ojciec chrzestny;My godfather took me to the zoo last summer.;Mój ojciec chrzestny zabrał mnie latem do zoo.
+A2;Rodzina i znajomi;boss;szef;My boss wants the project to be finished by Friday.;Mój szef chce, aby projekt został ukończony do piątku.
+A2;Rodzina i znajomi;team;zespół;Our team is training hard for the competition.;Nasz zespół ciężko trenuje do zawodów.
+A2;Rodzina i znajomi;mate;kumpel;I often go fishing with my mate.;Często chodzę na ryby z kumplem.
+A2;Dom i mieszkanie;house;dom;We painted the house last summer and it looks new.;W zeszłe lato pomalowaliśmy dom i wygląda jak nowy.
+A2;Dom i mieszkanie;flat;mieszkanie;Their flat has two bedrooms and a small balcony.;Ich mieszkanie ma dwie sypialnie i mały balkon.
+A2;Dom i mieszkanie;room;pokój;Can I borrow your room for an hour?;Czy mogę użyć twojego pokoju na godzinę?
+A2;Dom i mieszkanie;kitchen;kuchnia;The kitchen smells like fresh bread this morning.;Kuchnia dziś rano pachnie świeżym chlebem.
+A2;Dom i mieszkanie;bathroom;łazienka;Please clean the bathroom after your shower.;Proszę posprzątaj łazienkę po prysznicu.
+A2;Dom i mieszkanie;bedroom;sypialnia;She keeps a small lamp on her bedroom table.;Ona trzyma małą lampkę na stoliku w sypialni.
+A2;Dom i mieszkanie;living room;salon;We watched a movie together in the living room.;Oglądaliśmy razem film w salonie.
+A2;Dom i mieszkanie;dining room;jadalnia;The dining room table is set for six people.;Stół w jadalni jest nakryty dla sześciu osób.
+A2;Dom i mieszkanie;hall;przedpokój;Please take off your shoes in the hall.;Proszę zdejmij buty w przedpokoju.
+A2;Dom i mieszkanie;garden;ogród;There are many roses in our garden this year.;W tym roku w naszym ogrodzie jest dużo róż.
+A2;Dom i mieszkanie;balcony;balkon;They have a small balcony with a view of the park.;Maj¹ mały balkon z widokiem na park.
+A2;Dom i mieszkanie;garage;garaż;I keep my bike in the garage during winter.;Trzymam rower w garażu przez zimę.
+A2;Dom i mieszkanie;roof;dach;The roof needs to be repaired before winter.;Dach trzeba naprawić przed zimą.
+A2;Dom i mieszkanie;wall;ściana;She hung a big painting on the living room wall.;Ona zawiesiła duży obraz na ścianie w salonie.
+A2;Dom i mieszkanie;window;okno;Open the window, the room feels stuffy.;Otwórz okno, pokój jest duszny.
+A2;Dom i mieszkanie;door;drzwi;The front door is painted bright red.;Drzwi wejściowe są pomalowane na jaskrawoczerwono.
+A2;Dom i mieszkanie;floor;podłoga;We need a new floor in the kitchen.;Potrzebujemy nowej podłogi w kuchni.
+A2;Dom i mieszkanie;ceiling;sufit;The ceiling in the attic is very low.;Sufit na strychu jest bardzo niski.
+A2;Dom i mieszkanie;stairs;schody;Please hold the baby while I go down the stairs.;Trzymaj proszę dziecko, pójdę po schodach.
+A2;Dom i mieszkanie;lift;winda;The lift is out of order so we use the stairs.;Winda jest zepsuta, więc korzystamy ze schodów.
+A2;Dom i mieszkanie;sofa;sofa;The sofa in the shop is extremely comfortable.;Sofa w sklepie jest niezwykle wygodna.
+A2;Dom i mieszkanie;armchair;fotel;He sat in the armchair and read the newspaper.;Usiadł w fotelu i czytał gazetę.
+A2;Dom i mieszkanie;table;stół;Put the keys on the small table by the door.;Połóż klucze na małym stole przy drzwiach.
+A2;Dom i mieszkanie;chair;krzesło;There is an extra chair in the kitchen if you need it.;W kuchni jest dodatkowe krzesło, jeśli go potrzebujesz.
+A2;Dom i mieszkanie;bed;łóżko;I bought a new bed because the old one was uncomfortable.;Kupiłem nowe łóżko, ponieważ stare było niewygodne.
+A2;Dom i mieszkanie;wardrobe;szafa;Her wardrobe is full of colourful dresses.;Jej szafa jest pełna kolorowych sukienek.
+A2;Dom i mieszkanie;shelf;półka;She put her favourite books on the top shelf.;Położyła swoje ulubione książki na najwyższej półce.
+A2;Dom i mieszkanie;desk;biurko;I do my homework at the desk in my room.;Odrabiam pracę domową przy biurku w swoim pokoju.
+A2;Dom i mieszkanie;lamp;lampa;Turn on the lamp if you want to read at night.;Włącz lampę, jeśli chcesz czytać w nocy.
+A2;Dom i mieszkanie;carpet;dywan;The carpet in the living room is very soft.;Dywan w salonie jest bardzo miękki.
+A2;Dom i mieszkanie;mirror;lustro;She looked at herself in the mirror before going out.;Spojrzała w lustro, zanim wyszła.
+A2;Dom i mieszkanie;toilet;toaleta;The public toilet near the station is clean.;Toaleta publiczna przy stacji jest czysta.
+A2;Dom i mieszkanie;shower;prysznic;I prefer a hot shower in the morning.;Wolę gorący prysznic rano.
+A2;Dom i mieszkanie;bath;wanna;I filled the bath with warm water and bubbles.;Nalałem wanny ciepłą wodą i pianą.
+A2;Dom i mieszkanie;sink;zlew;There is a small crack in the kitchen sink.;W zlewie kuchennym jest mała pęknięcie.
+A2;Dom i mieszkanie;fridge;lodówka;Put the milk back in the fridge after use.;Włóż mleko z powrotem do lodówki po użyciu.
+A2;Dom i mieszkanie;freezer;zamrażarka;The freezer is full of homemade ice cream.;Zamrażarka jest pełna domowych lodów.
+A2;Dom i mieszkanie;oven;piekarnik;Preheat the oven to 180 degrees before baking.;Rozgrzej piekarnik do 180 stopni przed pieczeniem.
+A2;Dom i mieszkanie;stove;kuchenka;The old stove makes strange noises when it is on.;Stara kuchenka wydaje dziwne dźwięki, gdy jest włączona.
+A2;Dom i mieszkanie;microwave;mikrofalówka;I heat leftovers in the microwave for one minute.;Podgrzewam resztki w mikrofalówce przez minutę.
+A2;Dom i mieszkanie;washing machine;pralka;Our washing machine broke down last week.;Nasza pralka zepsuła się w zeszłym tygodniu.
+A2;Dom i mieszkanie;dishwasher;zmywarka;We bought a dishwasher to save time after dinners.;Kupiliśmy zmywarkę, żeby oszczędzić czas po obiadach.
+A2;Dom i mieszkanie;cupboard;szafka;He keeps his best plates in the kitchen cupboard.;Trzyma najlepsze talerze w szafce kuchennej.
+A2;Dom i mieszkanie;curtain;zasłona;Close the curtains when the sun is too bright.;Zasłoń zasłony, gdy słońce świeci za mocno.
+A2;Dom i mieszkanie;pillow;poduszka;I bought two soft pillows for better sleep.;Kupiłem dwie miękkie poduszki dla lepszego snu.
+A2;Dom i mieszkanie;blanket;koc;She wrapped the baby in a warm blanket.;Owinęła niemowlę w ciepły koc.
+A2;Dom i mieszkanie;sheet;prześcieradło;Change the sheets on the bed once a week.;Zmieniaj prześcieradło na łóżku raz w tygodniu.
+A2;Dom i mieszkanie;drawer;szuflada;There are old letters in the bottom drawer of the desk.;W dolnej szufladzie biurka są stare listy.
+A2;Dom i mieszkanie;chimney;komin;The chimney needs cleaning before winter comes.;Komin trzeba wyczyścić przed nadejściem zimy.
+A2;Jedzenie i picie;bread;chleb;Fresh bread smells wonderful in the morning.;Świeży chleb pachnie cudownie rano.
+A2;Jedzenie i picie;butter;masło;Could you spread some butter on my toast?;Czy mógłbyś posmarować mój tost masłem?
+A2;Jedzenie i picie;cheese;ser;This cheese is made from goat’s milk.;Ten ser jest zrobiony z koziego mleka.
+A2;Jedzenie i picie;milk;mleko;There isn’t enough milk for the coffee.;Nie ma wystarczająco mleka do kawy.
+A2;Jedzenie i picie;egg;jajko;He fried an egg for breakfast.;On usmażył jajko na śniadanie.
+A2;Jedzenie i picie;meat;mięso;Do you prefer white meat or red meat?;Wolisz białe mięso czy czerwone mięso?
+A2;Jedzenie i picie;chicken;kurczak;We had roast chicken for Sunday lunch.;Na niedzielny obiad jedliśmy pieczonego kurczaka.
+A2;Jedzenie i picie;beef;wołowina;Beef is more expensive than pork.;Wołowina jest droższa niż wieprzowina.
+A2;Jedzenie i picie;pork;wieprzowina;They cooked pork with vegetables for dinner.;Na obiad ugotowali wieprzowinę z warzywami.
+A2;Jedzenie i picie;fish;ryba;I like eating grilled fish by the sea.;Lubię jeść grillowaną rybę nad morzem.
+A2;Jedzenie i picie;apple;jabłko;She cut the apple into small pieces.;Ona pokroiła jabłko na małe kawałki.
+A2;Jedzenie i picie;banana;banan;Monkeys often eat bananas in the zoo.;Małpy w zoo często jedzą banany.
+A2;Jedzenie i picie;orange;pomarańcza;Orange juice is rich in vitamin C.;Sok pomarańczowy jest bogaty w witaminę C.
+A2;Jedzenie i picie;lemon;cytryna;Add a slice of lemon to the tea.;Dodaj plasterek cytryny do herbaty.
+A2;Jedzenie i picie;grape;winogrono;We bought a kilo of sweet grapes.;Kupiliśmy kilogram słodkich winogron.
+A2;Jedzenie i picie;pear;gruszka;This pear is very juicy.;Ta gruszka jest bardzo soczysta.
+A2;Jedzenie i picie;strawberry;truskawka;Strawberries grow in the garden in June.;Truskawki rosną w ogrodzie w czerwcu.
+A2;Jedzenie i picie;vegetable;warzywo;Eating vegetables every day is healthy.;Jedzenie warzyw codziennie jest zdrowe.
+A2;Jedzenie i picie;carrot;marchewka;Rabbits like eating carrots.;Króliczki lubią jeść marchewki.
+A2;Jedzenie i picie;tomato;pomidor;Tomatoes are used in many salads.;Pomidory są używane w wielu sałatkach.
+A2;Jedzenie i picie;potato;ziemniak;He boiled some potatoes for dinner.;Ugotował ziemniaki na obiad.
+A2;Jedzenie i picie;onion;cebula;Chopping onions makes me cry.;Krojenie cebuli doprowadza mnie do łez.
+A2;Jedzenie i picie;garlic;czosnek;Garlic is often used in Italian food.;Czosnek jest często używany w kuchni włoskiej.
+A2;Jedzenie i picie;pepper;papryka;She stuffed the pepper with rice.;Ona nadziała paprykę ryżem.
+A2;Jedzenie i picie;salad;sałatka;We ate a fresh salad with cucumbers and tomatoes.;Zjedliśmy świeżą sałatkę z ogórkami i pomidorami.
+A2;Jedzenie i picie;soup;zupa;Chicken soup is good when you are ill.;Rosół jest dobry, kiedy jesteś chory.
+A2;Jedzenie i picie;rice;ryż;They served rice with vegetables.;Podali ryż z warzywami.
+A2;Jedzenie i picie;pasta;makaron;My favourite pasta is spaghetti.;Mój ulubiony makaron to spaghetti.
+A2;Jedzenie i picie;pizza;pizza;Let’s share a big pizza.;Podzielmy się dużą pizzą.
+A2;Jedzenie i picie;sandwich;kanapka;I made a sandwich with ham and cheese.;Zrobiłem kanapkę z szynką i serem.
+A2;Jedzenie i picie;cake;ciasto;He baked a cake for her birthday.;On upiekł ciasto na jej urodziny.
+A2;Jedzenie i picie;cookie;ciastko;Can I have a cookie with my tea?;Czy mogę dostać ciastko do herbaty?
+A2;Jedzenie i picie;ice cream;lody;The children are eating ice cream in the park.;Dzieci jedzą lody w parku.
+A2;Jedzenie i picie;sugar;cukier;There is too much sugar in this drink.;W tym napoju jest za dużo cukru.
+A2;Jedzenie i picie;salt;sól;Add a little salt to the pasta.;Dodaj trochę soli do makaronu.
+A2;Jedzenie i picie;pepper (spice);pieprz;I don’t like too much black pepper in my food.;Nie lubię za dużo pieprzu w jedzeniu.
+A2;Jedzenie i picie;oil;olej;Heat the oil before frying the onions.;Rozgrzej olej przed smażeniem cebuli.
+A2;Jedzenie i picie;water;woda;Can I have a glass of water, please?;Czy mogę prosić szklankę wody?
+A2;Jedzenie i picie;juice;sok;Do you want apple juice or orange juice?;Chcesz sok jabłkowy czy pomarańczowy?
+A2;Jedzenie i picie;coffee;kawa;He drinks coffee every morning.;On pije kawę każdego ranka.
+A2;Jedzenie i picie;tea;herbata;Would you like some tea with lemon?;Chciałbyś herbatę z cytryną?
+A2;Jedzenie i picie;beer;piwo;They ordered two beers at the bar.;Zamówili dwa piwa w barze.
+A2;Jedzenie i picie;wine;wino;A bottle of wine is on the table.;Na stole stoi butelka wina.
+A2;Jedzenie i picie;breakfast;śniadanie;Breakfast gives me energy for the day.;Śniadanie daje mi energię na dzień.
+A2;Jedzenie i picie;lunch;lunch/obiad;What time do you usually have lunch?;O której godzinie zazwyczaj jesz lunch?
+A2;Jedzenie i picie;dinner;obiad/kolacja;We invited friends for dinner yesterday.;Wczoraj zaprosiliśmy przyjaciół na obiad.
+A2;Jedzenie i picie;snack;przekąska;She always has a small snack before bed.;Ona zawsze je małą przekąskę przed snem.
+A2;Jedzenie i picie;meal;posiłek;That was the best meal I’ve ever had.;To był najlepszy posiłek, jaki kiedykolwiek jadłem.
+A2;Jedzenie i picie;fork;widelec;There is a fork missing from the table.;Brakuje widelca na stole.
+A2;Jedzenie i picie;knife;nóż;Be careful with this knife, it’s sharp.;Uważaj na ten nóż, jest ostry.
+A2;Jedzenie i picie;spoon;łyżka;He stirred the soup with a spoon.;On zamieszał zupę łyżką.
+A2;Transport i podróże;car;samochód;He bought a new car last month.;On kupił nowy samochód w zeszłym miesiącu.
+A2;Transport i podróże;bus;autobus;The bus to the city leaves every 15 minutes.;Autobus do miasta odjeżdża co 15 minut.
+A2;Transport i podróże;train;pociąg;We travelled to Warsaw by train.;Podróżowaliśmy do Warszawy pociągiem.
+A2;Transport i podróże;plane;samolot;The plane landed safely at midnight.;Samolot wylądował bezpiecznie o północy.
+A2;Transport i podróże;boat;łódź;They crossed the river in a small boat.;Przepłynęli rzekę małą łodzią.
+A2;Transport i podróże;ship;statek;The ship sailed from the harbour in the morning.;Statek wypłynął z portu rano.
+A2;Transport i podróże;bicycle;rower;She rides her bicycle to school every day.;Ona codziennie jeździ rowerem do szkoły.
+A2;Transport i podróże;motorbike;motocykl;His motorbike is very fast.;Jego motocykl jest bardzo szybki.
+A2;Transport i podróże;taxi;taksówka;We took a taxi to the hotel.;Pojechaliśmy taksówką do hotelu.
+A2;Transport i podróże;tram;tramwaj;The tram stopped near the theatre.;Tramwaj zatrzymał się obok teatru.
+A2;Transport i podróże;underground;metro;I use the underground to get to work.;Korzystam z metra, aby dojechać do pracy.
+A2;Transport i podróże;station;stacja;The train leaves from platform 3 at the station.;Pociąg odjeżdża z peronu 3 na stacji.
+A2;Transport i podróże;airport;lotnisko;We arrived at the airport two hours before the flight.;Przyjechaliśmy na lotnisko dwie godziny przed lotem.
+A2;Transport i podróże;harbour;port;There are many fishing boats in the harbour.;W porcie jest wiele łodzi rybackich.
+A2;Transport i podróże;ticket;bilet;I bought a ticket for the concert online.;Kupiłem bilet na koncert przez internet.
+A2;Transport i podróże;seat;miejsce;Is this seat free?;Czy to miejsce jest wolne?
+A2;Transport i podróże;luggage;bagaż;Her luggage was very heavy.;Jej bagaż był bardzo ciężki.
+A2;Transport i podróże;suitcase;walizka;He packed his suitcase before the trip.;On spakował walizkę przed podróżą.
+A2;Transport i podróże;backpack;plecak;The student carries books in a backpack.;Uczeń nosi książki w plecaku.
+A2;Transport i podróże;map;mapa;We need a map to find the hotel.;Potrzebujemy mapy, żeby znaleźć hotel.
+A2;Transport i podróże;passport;paszport;Don’t forget your passport when you travel abroad.;Nie zapomnij paszportu, gdy podróżujesz za granicę.
+A2;Transport i podróże;visa;wiza;You need a visa to enter that country.;Potrzebujesz wizy, aby wjechać do tego kraju.
+A2;Transport i podróże;hotel;hotel;The hotel has a swimming pool and a spa.;Hotel ma basen i spa.
+A2;Transport i podróże;reception;recepcja;Please ask at the reception for your room key.;Proszę zapytać w recepcji o klucz do pokoju.
+A2;Transport i podróże;reservation;rezerwacja;I made a reservation for two nights.;Zrobiłem rezerwację na dwie noce.
+A2;Transport i podróże;journey;podróż;The journey took more than ten hours.;Podróż trwała ponad dziesięć godzin.
+A2;Transport i podróże;trip;wycieczka;We went on a school trip to the museum.;Pojechaliśmy na szkolną wycieczkę do muzeum.
+A2;Transport i podróże;travel;podróżować;They love to travel around the world.;Oni uwielbiają podróżować po świecie.
+A2;Transport i podróże;holiday;wakacje;We spent our holiday at the seaside.;Spędziliśmy wakacje nad morzem.
+A2;Transport i podróże;tourist;turysta;The city is full of tourists in summer.;Latem miasto jest pełne turystów.
+A2;Transport i podróże;guide;przewodnik;The guide showed us the old castle.;Przewodnik pokazał nam stary zamek.
+A2;Transport i podróże;beach;plaża;Children are playing on the beach.;Dzieci bawią się na plaży.
+A2;Transport i podróże;mountains;góry;We went hiking in the mountains.;Poszliśmy na wędrówkę w góry.
+A2;Transport i podróże;island;wyspa;They spent a week on a tropical island.;Spędzili tydzień na tropikalnej wyspie.
+A2;Transport i podróże;border;granica;We crossed the border at night.;Przekroczyliśmy granicę w nocy.
+A2;Transport i podróże;customs;odprawa celna;We had to wait at customs for an hour.;Musieliśmy czekać na odprawie celnej godzinę.
+A2;Transport i podróże;delay;opóźnienie;The flight had a two-hour delay.;Lot miał dwugodzinne opóźnienie.
+A2;Transport i podróże;departure;odlot/odjazd;The departure is scheduled for 8 a.m.;Odlot jest zaplanowany na godzinę 8:00.
+A2;Transport i podróże;arrival;przylot/przyjazd;We are waiting for the arrival of the train.;Czekamy na przyjazd pociągu.
+A2;Transport i podróże;ticket office;kasa biletowa;I bought a ticket at the ticket office.;Kupiłem bilet w kasie biletowej.
+A2;Transport i podróże;platform;peron;The train to Berlin leaves from platform 2.;Pociąg do Berlina odjeżdża z peronu 2.
+A2;Transport i podróże;stop;przystanek;This is the last bus stop.;To jest ostatni przystanek autobusu.
+A2;Transport i podróże;petrol station;stacja benzynowa;We stopped at a petrol station to buy fuel.;Zatrzymaliśmy się na stacji benzynowej, aby zatankować.
+A2;Transport i podróże;traffic;ruch uliczny;There is a lot of traffic in the city centre.;W centrum miasta jest duży ruch uliczny.
+A2;Transport i podróże;road;droga;The road to the village is very narrow.;Droga do wioski jest bardzo wąska.
+A2;Transport i podróże;street;ulica;Our school is on Green Street.;Nasza szkoła jest przy ulicy Green.
+A2;Transport i podróże;crossroad;skrzyżowanie;Turn left at the crossroad.;Skręć w lewo na skrzyżowaniu.
+A2;Transport i podróże;bridge;most;There is a big bridge over the river.;Nad rzeką jest duży most.
+A2;Transport i podróże;tunnel;tunel;The tunnel is five kilometres long.;Tunel ma pięć kilometrów długości.
+B1;Podróże i turystyka;sightseeing;zwiedzanie;We spent the afternoon sightseeing in the old town.;Spędziliśmy popołudnie na zwiedzaniu starego miasta.
+B1;Podróże i turystyka;excursion;wycieczka;Our class is going on an excursion to the science museum.;Nasza klasa jedzie na wycieczkę do muzeum nauki.
+B1;Podróże i turystyka;journey;podróż;The journey across the desert was long and tiring.;Podróż przez pustynię była długa i męcząca.
+B1;Podróże i turystyka;voyage;rejs;The voyage across the Atlantic took two weeks.;Rejs przez Atlantyk trwał dwa tygodnie.
+B1;Podróże i turystyka;trip;wyjazd;We are planning a weekend trip to the mountains.;Planujemy weekendowy wyjazd w góry.
+B1;Podróże i turystyka;tour;objazd/wycieczka;They booked a tour of Italy with a travel agency.;Zarezerwowali objazdową wycieczkę po Włoszech w biurze podróży.
+B1;Podróże i turystyka;adventure;przygoda;Climbing the volcano was the greatest adventure of my life.;Wspinaczka na wulkan była największą przygodą mojego życia.
+B1;Podróże i turystyka;destination;cel podróży;Paris is a very popular holiday destination.;Paryż to bardzo popularny cel podróży.
+B1;Podróże i turystyka;accommodation;zakwaterowanie;The hotel provides accommodation for up to 200 guests.;Hotel zapewnia zakwaterowanie dla 200 gości.
+B1;Podróże i turystyka;hostel;hostel;We stayed in a cheap hostel near the station.;Zatrzymaliśmy się w tanim hostelu blisko dworca.
+B1;Podróże i turystyka;guesthouse;pensjonat;The family runs a small guesthouse by the sea.;Rodzina prowadzi mały pensjonat nad morzem.
+B1;Podróże i turystyka;bed and breakfast;nocleg ze śniadaniem;We booked a bed and breakfast in the countryside.;Zarezerwowaliśmy nocleg ze śniadaniem na wsi.
+B1;Podróże i turystyka;campsite;kemping;The campsite is next to a beautiful lake.;Kemping znajduje się obok pięknego jeziora.
+B1;Podróże i turystyka;tent;namiot;We slept in a tent during our hiking trip.;Spaliśmy w namiocie podczas naszej wędrówki.
+B1;Podróże i turystyka;caravan;przyczepa kempingowa;They bought a caravan to travel around Europe.;Kupili przyczepę kempingową, aby podróżować po Europie.
+B1;Podróże i turystyka;luggage;bagaż;Her luggage was lost at the airport.;Jej bagaż zaginął na lotnisku.
+B1;Podróże i turystyka;baggage claim;odbiór bagażu;We waited for our suitcases at the baggage claim area.;Czekaliśmy na nasze walizki przy odbiorze bagażu.
+B1;Podróże i turystyka;check-in desk;stanowisko odprawy;Please go to the check-in desk with your passport.;Proszę udać się do stanowiska odprawy z paszportem.
+B1;Podróże i turystyka;boarding pass;karta pokładowa;You need a boarding pass to enter the plane.;Potrzebujesz karty pokładowej, aby wejść do samolotu.
+B1;Podróże i turystyka;security check;kontrola bezpieczeństwa;We went through security check before boarding.;Przeszliśmy kontrolę bezpieczeństwa przed wejściem na pokład.
+B1;Podróże i turystyka;customs officer;celnik;The customs officer asked me about the items in my bag.;Celnik zapytał mnie o rzeczy w mojej torbie.
+B1;Podróże i turystyka;departure lounge;hala odlotów;We waited in the departure lounge for two hours.;Czekaliśmy w hali odlotów przez dwie godziny.
+B1;Podróże i turystyka;arrival hall;hala przylotów;They met us in the arrival hall.;Spotkali się z nami w hali przylotów.
+B1;Podróże i turystyka;delayed flight;opóźniony lot;Our delayed flight arrived three hours late.;Nasz opóźniony lot przyleciał trzy godziny później.
+B1;Podróże i turystyka;cancelled flight;odwołany lot;The cancelled flight made many tourists angry.;Odwołany lot rozzłościł wielu turystów.
+B1;Podróże i turystyka;gate;bramka;The passengers are waiting at gate 15.;Pasażerowie czekają przy bramce numer 15.
+B1;Podróże i turystyka;runway;pas startowy;The plane is waiting on the runway.;Samolot czeka na pasie startowym.
+B1;Podróże i turystyka;pilot;pilot;The pilot greeted the passengers.;Pilot przywitał pasażerów.
+B1;Podróże i turystyka;cabin crew;załoga samolotu;The cabin crew demonstrated the safety instructions.;Załoga samolotu pokazała instrukcje bezpieczeństwa.
+B1;Podróże i turystyka;stewardess;stewardesa;The stewardess offered drinks to the passengers.;Stewardesa zaproponowała napoje pasażerom.
+B1;Podróże i turystyka;sight;zabytek/atrakcja;The Eiffel Tower is the most famous sight in Paris.;Wieża Eiffla to najsłynniejszy zabytek w Paryżu.
+B1;Podróże i turystyka;museum;muzeum;The museum has an exhibition about ancient Egypt.;Muzeum ma wystawę o starożytnym Egipcie.
+B1;Podróże i turystyka;gallery;galeria;We visited an art gallery in the city centre.;Odwiedziliśmy galerię sztuki w centrum miasta.
+B1;Podróże i turystyka;monument;pomnik;There is a monument to the soldiers in the park.;W parku stoi pomnik żołnierzy.
+B1;Podróże i turystyka;cathedral;katedra;The cathedral is famous for its stained glass windows.;Katedra słynie ze swoich witraży.
+B1;Podróże i turystyka;castle;zamek;They explored an old castle in Scotland.;Zwiedzali stary zamek w Szkocji.
+B1;Podróże i turystyka;palace;pałac;The king lived in a beautiful palace.;Król mieszkał w pięknym pałacu.
+B1;Podróże i turystyka;church;kościół;The village church is very old.;Kościół w wiosce jest bardzo stary.
+B1;Podróże i turystyka;mosque;meczet;The mosque was full of people during prayer time.;Meczet był pełen ludzi w czasie modlitwy.
+B1;Podróże i turystyka;temple;świątynia;They visited a Buddhist temple.;Odwiedzili buddyjską świątynię.
+B1;Podróże i turystyka;souvenir;pamiątka;I bought a small souvenir for my sister.;Kupiłem małą pamiątkę dla mojej siostry.
+B1;Podróże i turystyka;postcard;pocztówka;She sent me a postcard from Rome.;Ona wysłała mi pocztówkę z Rzymu.
+B1;Podróże i turystyka;local cuisine;kuchnia lokalna;We tried the local cuisine in Greece.;Spróbowaliśmy kuchni lokalnej w Grecji.
+B1;Podróże i turystyka;traditional dish;tradycyjna potrawa;Pierogi are a traditional dish in Poland.;Pierogi to tradycyjna potrawa w Polsce.
+B1;Podróże i turystyka;travel agency;biuro podróży;We booked the trip at a travel agency.;Zarezerwowaliśmy wycieczkę w biurze podróży.
+B1;Podróże i turystyka;package holiday;wakacje zorganizowane;Package holidays include flights and hotels.;Wakacje zorganizowane obejmują loty i hotele.
+B1;Podróże i turystyka;insurance;ubezpieczenie;Travel insurance is very important.;Ubezpieczenie podróżne jest bardzo ważne.
+B1;Podróże i turystyka;adventure holiday;wakacje przygodowe;They went on an adventure holiday in Africa.;Pojechali na wakacje przygodowe do Afryki.
+B1;Podróże i turystyka;cruise;rejs;We went on a cruise around the Mediterranean.;Pojechaliśmy na rejs po Morzu Śródziemnym.
+B1;Podróże i turystyka;safari;safari;They saw lions on their safari in Kenya.;Widzieli lwy na safari w Kenii.
+B1;Podróże i turystyka;hiking;wędrówka;Hiking in the Alps is very popular.;Wędrówki po Alpach są bardzo popularne.
+B1;Podróże i turystyka;backpacking;podróżowanie z plecakiem;He spent a year backpacking in Asia.;Spędził rok podróżując z plecakiem po Azji.
+B1;Podróże i turystyka;guidebook;przewodnik książkowy;I always take a guidebook when I travel.;Zawsze zabieram przewodnik książkowy, gdy podróżuję.
+B1;Podróże i turystyka;tour guide;przewodnik;Our tour guide told us many interesting facts.;Nasz przewodnik opowiedział nam wiele ciekawostek.
+B1;Podróże i turystyka;map;mapa;The map helped us find the right street.;Mapa pomogła nam znaleźć właściwą ulicę.
+B1;Podróże i turystyka;itinerary;plan podróży;The itinerary includes three cities.;Plan podróży obejmuje trzy miasta.
+B1;Podróże i turystyka;resort;kurort;They stayed in a luxury resort in Spain.;Zatrzymali się w luksusowym kurorcie w Hiszpanii.
+B1;Podróże i turystyka;beach;plaża;The beach was crowded with tourists.;Plaża była zatłoczona turystami.
+B1;Podróże i turystyka;seaside;wybrzeże;We spent the weekend at the seaside.;Spędziliśmy weekend nad wybrzeżem.
+B1;Podróże i turystyka;mountains;góry;They rented a cabin in the mountains.;Wynajęli chatkę w górach.
+B1;Podróże i turystyka;valley;dolina;A river runs through the valley.;Przez dolinę płynie rzeka.
+B1;Podróże i turystyka;forest;las;We got lost in the forest.;Zgubiliśmy się w lesie.
+B1;Podróże i turystyka;lake;jezioro;They swam in a cold mountain lake.;Pływali w zimnym górskim jeziorze.
+B1;Podróże i turystyka;river;rzeka;The river flows into the sea.;Rzeka wpada do morza.
+B1;Podróże i turystyka;waterfall;wodospad;The waterfall was very beautiful.;Wodospad był bardzo piękny.
+B1;Podróże i turystyka;cave;jaskinia;We explored a dark cave with a guide.;Zwiedzaliśmy ciemną jaskinię z przewodnikiem.
+B1;Podróże i turystyka;admission fee;opłata za wstęp;The admission fee is five euros.;Opłata za wstęp wynosi pięć euro.
+B1;Podróże i turystyka;entrance ticket;bilet wstępu;We bought entrance tickets online.;Kupiliśmy bilety wstępu online.
+B1;Podróże i turystyka;currency exchange;kantor wymiany;There is a currency exchange near the hotel.;Obok hotelu jest kantor wymiany.
+B1;Podróże i turystyka;local transport;transport lokalny;Local transport is cheap and easy to use.;Transport lokalny jest tani i łatwy w użyciu.
+B1;Podróże i turystyka;bike rental;wypożyczalnia rowerów;We found a bike rental in the city centre.;Znaleźliśmy wypożyczalnię rowerów w centrum miasta.
+B1;Podróże i turystyka;car hire;wynajem samochodu;Car hire is available at the airport.;Wynajem samochodów jest dostępny na lotnisku.
+B1;Podróże i turystyka;travel blog;blog podróżniczy;She writes a popular travel blog.;Ona prowadzi popularny blog podróżniczy.
+B1;Podróże i turystyka;journey time;czas podróży;The journey time was longer than expected.;Czas podróży był dłuższy niż się spodziewaliśmy.
+B1;Podróże i turystyka;hotel review;recenzja hotelu;I wrote a hotel review on the website.;Napisałem recenzję hotelu na stronie internetowej.
+B1;Podróże i turystyka;recommendation;rekomendacja;He gave me a recommendation for a good restaurant.;Dał mi rekomendację dobrej restauracji.
+B1;Podróże i turystyka;emergency number;numer alarmowy;Call the emergency number in case of danger.;Zadzwoń na numer alarmowy w razie niebezpieczeństwa.
+B1;Podróże i turystyka;lost property;biuro rzeczy znalezionych;I reported my lost bag at the lost property office.;Zgłosiłem moją zgubioną torbę w biurze rzeczy znalezionych.
+B1;Podróże i turystyka;language barrier;bariera językowa;The language barrier made communication difficult.;Bariera językowa utrudniała komunikację.
+B1;Podróże i turystyka;cultural differences;różnice kulturowe;We should respect cultural differences when we travel.;Powinniśmy szanować różnice kulturowe, gdy podróżujemy.
+B1;Edukacja i praca;primary school;szkoła podstawowa;Children start learning to read in primary school.;Dzieci zaczynają uczyć się czytać w szkole podstawowej.
+B1;Edukacja i praca;secondary school;szkoła średnia;She made many friends in secondary school.;Ona poznała wielu przyjaciół w szkole średniej.
+B1;Edukacja i praca;high school;liceum;He joined the basketball team in high school.;On dołączył do drużyny koszykarskiej w liceum.
+B1;Edukacja i praca;college;kolegium;She studied art at a local college.;Ona studiowała sztukę w lokalnym kolegium.
+B1;Edukacja i praca;university;uniwersytet;He wants to go to university to study medicine.;On chce iść na uniwersytet, aby studiować medycynę.
+B1;Edukacja i praca;student;student;The student asked a question during the lecture.;Student zadał pytanie podczas wykładu.
+B1;Edukacja i praca;teacher;nauczyciel;The teacher explained the new grammar rule.;Nauczyciel wyjaśnił nową zasadę gramatyczną.
+B1;Edukacja i praca;lecturer;wykładowca;The lecturer spoke about climate change.;Wykładowca mówił o zmianach klimatycznych.
+B1;Edukacja i praca;professor;profesor;The professor is an expert in physics.;Profesor jest ekspertem w dziedzinie fizyki.
+B1;Edukacja i praca;classroom;klasa;There are 25 desks in our classroom.;W naszej klasie jest 25 ławek.
+B1;Edukacja i praca;lesson;lekcja;The English lesson starts at nine o’clock.;Lekcja angielskiego zaczyna się o dziewiątej.
+B1;Edukacja i praca;subject;przedmiot;Math is my favourite subject at school.;Matematyka to mój ulubiony przedmiot w szkole.
+B1;Edukacja i praca;maths;matematyka;She finds maths difficult but interesting.;Ona uważa matematykę za trudną, ale ciekawą.
+B1;Edukacja i praca;science;nauki ścisłe;Science helps us understand the world.;Nauki ścisłe pomagają nam zrozumieć świat.
+B1;Edukacja i praca;history;historia;I enjoy learning about ancient history.;Lubię uczyć się o historii starożytnej.
+B1;Edukacja i praca;geography;geografia;In geography we learned about rivers and mountains.;Na geografii uczyliśmy się o rzekach i górach.
+B1;Edukacja i praca;literature;literatura;She is writing an essay on English literature.;Ona pisze esej o literaturze angielskiej.
+B1;Edukacja i praca;language;język;He speaks more than one foreign language.;On mówi w więcej niż jednym języku obcym.
+B1;Edukacja i praca;foreign language;język obcy;Learning a foreign language is useful when travelling.;Nauka języka obcego jest przydatna w podróży.
+B1;Edukacja i praca;exam;egzamin;The exam will take place next Monday.;Egzamin odbędzie się w następny poniedziałek.
+B1;Edukacja i praca;test;test;She passed the test with a high score.;Ona zdała test z wysokim wynikiem.
+B1;Edukacja i praca;homework;praca domowa;He always does his homework after dinner.;On zawsze odrabia pracę domową po kolacji.
+B1;Edukacja i praca;assignment;zadanie;We have to finish the assignment by Friday.;Musimy skończyć zadanie do piątku.
+B1;Edukacja i praca;project;projekt;They are working on a group project at school.;Oni pracują nad projektem grupowym w szkole.
+B1;Edukacja i praca;presentation;prezentacja;Her presentation about the environment was excellent.;Jej prezentacja o środowisku była znakomita.
+B1;Edukacja i praca;grade;ocena;He got the best grade in the class.;On dostał najlepszą ocenę w klasie.
+B1;Edukacja i praca;mark;stopień;The teacher gave me a good mark for my essay.;Nauczyciel dał mi dobrą ocenę za mój esej.
+B1;Edukacja i praca;result;wynik;The exam results will be announced tomorrow.;Wyniki egzaminu zostaną ogłoszone jutro.
+B1;Edukacja i praca;diploma;dyplom;She received her diploma after finishing the course.;Ona otrzymała dyplom po ukończeniu kursu.
+B1;Edukacja i praca;degree;stopień naukowy;He is studying for a degree in law.;On studiuje, aby uzyskać stopień naukowy z prawa.
+B1;Edukacja i praca;certificate;certyfikat;I need a language certificate for my job application.;Potrzebuję certyfikatu językowego do podania o pracę.
+B1;Edukacja i praca;qualification;kwalifikacja;She has the right qualifications for the position.;Ona ma odpowiednie kwalifikacje do tego stanowiska.
+B1;Edukacja i praca;skill;umiejętność;Communication is an important skill at work.;Komunikacja to ważna umiejętność w pracy.
+B1;Edukacja i praca;knowledge;wiedza;He has a lot of knowledge about computers.;On ma dużą wiedzę o komputerach.
+B1;Edukacja i praca;ability;zdolność;Her ability to solve problems is impressive.;Jej zdolność do rozwiązywania problemów jest imponująca.
+B1;Edukacja i praca;talent;talent;She has a talent for painting.;Ona ma talent do malowania.
+B1;Edukacja i praca;job;praca;He got a new job in a bank.;On dostał nową pracę w banku.
+B1;Edukacja i praca;occupation;zawód;What is your father’s occupation?;Jaki jest zawód twojego ojca?
+B1;Edukacja i praca;profession;profesja;Medicine is a very demanding profession.;Medycyna to bardzo wymagająca profesja.
+B1;Edukacja i praca;career;kariera;She hopes to have a career in journalism.;Ona ma nadzieję na karierę w dziennikarstwie.
+B1;Edukacja i praca;employer;pracodawca;The employer offered better working conditions.;Pracodawca zaoferował lepsze warunki pracy.
+B1;Edukacja i praca;employee;pracownik;Every employee must follow the safety rules.;Każdy pracownik musi przestrzegać zasad bezpieczeństwa.
+B1;Edukacja i praca;colleague;kolega z pracy;My colleague helped me finish the project.;Mój kolega z pracy pomógł mi skończyć projekt.
+B1;Edukacja i praca;teamwork;praca zespołowa;Teamwork is necessary for success.;Praca zespołowa jest konieczna do sukcesu.
+B1;Edukacja i praca;meeting;spotkanie;We had a meeting with the manager yesterday.;Mieliśmy wczoraj spotkanie z kierownikiem.
+B1;Edukacja i praca;conference;konferencja;He attended an international conference on health.;On uczestniczył w międzynarodowej konferencji o zdrowiu.
+B1;Edukacja i praca;training;szkolenie;New employees must take part in training.;Nowi pracownicy muszą brać udział w szkoleniu.
+B1;Edukacja i praca;interview;rozmowa kwalifikacyjna;She had a job interview last week.;Ona miała rozmowę kwalifikacyjną w zeszłym tygodniu.
+B1;Edukacja i praca;CV;CV;He updated his CV before applying for the job.;On zaktualizował swoje CV przed aplikacją o pracę.
+B1;Edukacja i praca;cover letter;list motywacyjny;A cover letter should explain why you want the job.;List motywacyjny powinien wyjaśniać, dlaczego chcesz tę pracę.
+B1;Edukacja i praca;application;podanie;She sent her job application yesterday.;Ona wysłała swoje podanie o pracę wczoraj.
+B1;Edukacja i praca;experience;doświadczenie;He has a lot of experience in sales.;On ma duże doświadczenie w sprzedaży.
+B1;Edukacja i praca;promotion;awans;She got a promotion after two years of hard work.;Ona dostała awans po dwóch latach ciężkiej pracy.
+B1;Edukacja i praca;salary;pensja;His salary is higher than mine.;Jego pensja jest wyższa niż moja.
+B1;Edukacja i praca;wage;płaca;The wage depends on the hours you work.;Płaca zależy od liczby przepracowanych godzin.
+B1;Edukacja i praca;bonus;premia;Employees get a Christmas bonus every year.;Pracownicy dostają premię świąteczną każdego roku.
+B1;Edukacja i praca;contract;umowa;He signed a two-year contract with the company.;On podpisał dwuletnią umowę z firmą.
+B1;Edukacja i praca;deadline;termin;The deadline for the project is next Friday.;Termin projektu przypada na następny piątek.
+B1;Edukacja i praca;task;zadanie;This task is more difficult than the others.;To zadanie jest trudniejsze niż pozostałe.
+B1;Edukacja i praca;responsibility;odpowiedzialność;Parents have responsibility for their children.;Rodzice ponoszą odpowiedzialność za swoje dzieci.
+B1;Edukacja i praca;shift;zmiana;He works the night shift at the factory.;On pracuje na nocną zmianę w fabryce.
+B1;Edukacja i praca;part-time job;praca na pół etatu;She has a part-time job in a shop.;Ona ma pracę na pół etatu w sklepie.
+B1;Edukacja i praca;full-time job;praca na pełny etat;He prefers a full-time job with a stable income.;On woli pracę na pełny etat ze stałym dochodem.
+B1;Edukacja i praca;freelancer;wolny strzelec;She works as a freelancer designing websites.;Ona pracuje jako wolny strzelec projektując strony internetowe.
+B1;Edukacja i praca;internship;staż;He is doing an internship at a law firm.;On odbywa staż w kancelarii prawnej.
+B1;Edukacja i praca;unemployment;bezrobocie;Unemployment is a big problem in many countries.;Bezrobocie jest dużym problemem w wielu krajach.
+B1;Edukacja i praca;strike;strajk;The workers went on strike for better pay.;Pracownicy rozpoczęli strajk o lepsze wynagrodzenie.
+B1;Edukacja i praca;pension;emerytura;My grandfather receives a state pension.;Mój dziadek otrzymuje państwową emeryturę.
+B1;Media i komunikacja;newspaper;gazeta;He reads the newspaper every morning with breakfast.;On czyta gazetę każdego ranka przy śniadaniu.
+B1;Media i komunikacja;magazine;czasopismo;She bought a fashion magazine at the station.;Ona kupiła czasopismo modowe na dworcu.
+B1;Media i komunikacja;journal;czasopismo naukowe;The scientist published his research in a medical journal.;Naukowiec opublikował swoje badania w czasopiśmie medycznym.
+B1;Media i komunikacja;article;artykuł;I read an interesting article about climate change.;Przeczytałem ciekawy artykuł o zmianach klimatu.
+B1;Media i komunikacja;headline;nagłówek;The headline of the newspaper caught my attention.;Nagłówek gazety przyciągnął moją uwagę.
+B1;Media i komunikacja;news;wiadomości;The evening news reported on the storm.;Wiadomości wieczorne mówiły o burzy.
+B1;Media i komunikacja;advertisement;reklama;There was an advertisement for a new phone on TV.;W telewizji była reklama nowego telefonu.
+B1;Media i komunikacja;commercial;spot reklamowy;The commercial made me want to try the product.;Spot reklamowy sprawił, że chciałem wypróbować ten produkt.
+B1;Media i komunikacja;poster;plakat;They put up a poster for the concert on the wall.;Powiesili plakat koncertu na ścianie.
+B1;Media i komunikacja;radio;radio;I like listening to music on the radio while driving.;Lubię słuchać muzyki w radiu podczas jazdy.
+B1;Media i komunikacja;television;telewizja;They watched the football match on television.;Oni oglądali mecz piłki nożnej w telewizji.
+B1;Media i komunikacja;channel;kanał;This channel shows only documentaries.;Ten kanał pokazuje tylko filmy dokumentalne.
+B1;Media i komunikacja;program;program;What’s your favourite TV program?;Jaki jest twój ulubiony program telewizyjny?
+B1;Media i komunikacja;episode;odcinek;I missed the last episode of the series.;Przegapiłem ostatni odcinek serialu.
+B1;Media i komunikacja;series;serial;The new series is very popular among teenagers.;Nowy serial jest bardzo popularny wśród nastolatków.
+B1;Media i komunikacja;documentary;film dokumentalny;We watched a documentary about wild animals.;Oglądaliśmy film dokumentalny o dzikich zwierzętach.
+B1;Media i komunikacja;cartoon;film animowany;My little brother loves watching cartoons.;Mój młodszy brat uwielbia oglądać kreskówki.
+B1;Media i komunikacja;reporter;reporter;The reporter asked difficult questions.;Reporter zadawał trudne pytania.
+B1;Media i komunikacja;journalist;dziennikarz;The journalist wrote an article about the election.;Dziennikarz napisał artykuł o wyborach.
+B1;Media i komunikacja;editor;redaktor;The editor corrected the mistakes in the article.;Redaktor poprawił błędy w artykule.
+B1;Media i komunikacja;publisher;wydawca;The publisher released a new book last week.;Wydawca wydał nową książkę w zeszłym tygodniu.
+B1;Media i komunikacja;interview;wywiad;The singer gave an interview to the local newspaper.;Piosenkarka udzieliła wywiadu lokalnej gazecie.
+B1;Media i komunikacja;announcement;ogłoszenie;The school made an announcement about the holiday.;Szkoła zrobiła ogłoszenie o wakacjach.
+B1;Media i komunikacja;press;prasa;The press often writes about celebrities.;Prasa często pisze o celebrytach.
+B1;Media i komunikacja;blog;blog;She writes a travel blog with many photos.;Ona prowadzi blog podróżniczy z wieloma zdjęciami.
+B1;Media i komunikacja;website;strona internetowa;I found this information on the official website.;Znalazłem tę informację na oficjalnej stronie internetowej.
+B1;Media i komunikacja;homepage;strona główna;The homepage has a simple design.;Strona główna ma prosty wygląd.
+B1;Media i komunikacja;link;link;Can you send me the link to that article?;Czy możesz wysłać mi link do tego artykułu?
+B1;Media i komunikacja;email;e-mail;He received an email from his teacher.;On otrzymał e-mail od swojego nauczyciela.
+B1;Media i komunikacja;letter;list;She wrote a long letter to her grandmother.;Ona napisała długi list do swojej babci.
+B1;Media i komunikacja;message;wiadomość;I sent him a short message on my phone.;Wysłałem mu krótką wiadomość na telefon.
+B1;Media i komunikacja;text message;SMS;She got a text message from her friend.;Ona dostała SMS od swojej koleżanki.
+B1;Media i komunikacja;phone call;rozmowa telefoniczna;I made a phone call to the doctor.;Zadzwoniłem do lekarza.
+B1;Media i komunikacja;social media;media społecznościowe;Social media can connect people around the world.;Media społecznościowe mogą łączyć ludzi na całym świecie.
+B1;Media i komunikacja;post;post;He wrote a post about his holiday on Facebook.;On napisał post o swoich wakacjach na Facebooku.
+B1;Media i komunikacja;comment;komentarz;She left a comment under my photo.;Ona zostawiła komentarz pod moim zdjęciem.
+B1;Media i komunikacja;share;udostępnić;Please share this video with your friends.;Proszę udostępnij ten film swoim znajomym.
+B1;Media i komunikacja;like;polubić;Many people liked my new profile picture.;Wiele osób polubiło moje nowe zdjęcie profilowe.
+B1;Media i komunikacja;follow;obserwować;I decided to follow that travel blogger.;Postanowiłem obserwować tego blogera podróżniczego.
+B1;Media i komunikacja;subscriber;subskrybent;The channel has over one million subscribers.;Kanał ma ponad milion subskrybentów.
+B1;Media i komunikacja;hashtag;hashtag;She used a funny hashtag on Instagram.;Ona użyła zabawnego hashtagu na Instagramie.
+B1;Media i komunikacja;notification;powiadomienie;I got a notification about a new message.;Dostałem powiadomienie o nowej wiadomości.
+B1;Media i komunikacja;chat;czat;We had a chat online last night.;Rozmawialiśmy na czacie wczoraj wieczorem.
+B1;Media i komunikacja;video call;rozmowa wideo;They had a video call with their family abroad.;Oni mieli rozmowę wideo ze swoją rodziną za granicą.
+B1;Media i komunikacja;communication;komunikacja;Good communication is important in relationships.;Dobra komunikacja jest ważna w relacjach.
+B1;Media i komunikacja;conversation;rozmowa;We had a long conversation about the future.;Mieliśmy długą rozmowę o przyszłości.
+B1;Media i komunikacja;discussion;dyskusja;There was a discussion about the new rules.;Była dyskusja o nowych zasadach.
+B1;Media i komunikacja;debate;debata;The debate between the candidates was on TV.;Debata między kandydatami była w telewizji.
+B1;Media i komunikacja;announcement;zapowiedź;The train announcement said it was delayed.;Zapowiedź pociągu mówiła, że ma opóźnienie.
+B1;Media i komunikacja;rumour;plotka;There is a rumour about a new shop opening.;Krąży plotka o otwarciu nowego sklepu.
+B1;Media i komunikacja;gossip;plotka;She enjoys gossip about celebrities.;Ona lubi plotki o celebrytach.
+B1;Media i komunikacja;information;informacja;I need more information about the course.;Potrzebuję więcej informacji o kursie.
+B1;Media i komunikacja;opinion;opinia;In my opinion, this film is too long.;Moim zdaniem ten film jest za długi.
+B1;Media i komunikacja;argument;argument;They had an argument about money.;Pokłócili się o pieniądze.
+B1;Media i komunikacja;advice;rada;My father gave me good advice.;Mój ojciec dał mi dobrą radę.
+B1;Media i komunikacja;warning;ostrzeżenie;There was a warning about the storm on TV.;W telewizji było ostrzeżenie o burzy.
+B1;Media i komunikacja;fake news;fałszywe wiadomości;Fake news spreads quickly on the internet.;Fałszywe wiadomości szybko rozprzestrzeniają się w internecie.
+B1;Media i komunikacja;headline news;wiadomości dnia;The headline news was about the election results.;Wiadomości dnia dotyczyły wyników wyborów.
+B1;Media i komunikacja;press release;komunikat prasowy;The company issued a press release yesterday.;Firma wydała komunikat prasowy wczoraj.
+B1;Media i komunikacja;review;recenzja;I wrote a review of the new restaurant.;Napisałem recenzję nowej restauracji.
+B1;Media i komunikacja;columnist;felietonista;The columnist writes for a popular newspaper.;Felietonista pisze dla popularnej gazety.
+B1;Media i komunikacja;correspondent;korespondent;The war correspondent sent a report from the front.;Korespondent wojenny wysłał relację z frontu.
+B1;Media i komunikacja;coverage;relacja;The TV coverage of the match was excellent.;Relacja telewizyjna z meczu była znakomita.
+B1;Media i komunikacja;audience;publiczność;The audience clapped loudly after the speech.;Publiczność głośno biła brawo po przemówieniu.
+B1;Zdrowie i styl życia;health;zdrowie;Good health is the most valuable thing we can have.;Zdrowie jest najcenniejszą rzeczą, jaką możemy mieć.
+B1;Zdrowie i styl życia;illness;choroba;She stayed at home because of a sudden illness.;Została w domu z powodu nagłej choroby.
+B1;Zdrowie i styl życia;disease;choroba;Diabetes is a common disease nowadays.;Cukrzyca jest dziś powszechną chorobą.
+B1;Zdrowie i styl życia;infection;infekcja;The doctor gave me antibiotics for the throat infection.;Lekarz przepisał mi antybiotyk na infekcję gardła.
+B1;Zdrowie i styl życia;virus;wirus;The virus spreads quickly among children.;Wirus szybko rozprzestrzenia się wśród dzieci.
+B1;Zdrowie i styl życia;flu;grypa;I got the flu last winter and stayed in bed for a week.;Złapałem grypę zeszłej zimy i leżałem tydzień w łóżku.
+B1;Zdrowie i styl życia;cold;przeziębienie;He has a bad cold and cannot go to work.;On ma silne przeziębienie i nie może iść do pracy.
+B1;Zdrowie i styl życia;fever;gorączka;The child has a high fever and needs rest.;Dziecko ma wysoką gorączkę i potrzebuje odpoczynku.
+B1;Zdrowie i styl życia;cough;kaszel;His cough got worse during the night.;Jego kaszel nasilił się w nocy.
+B1;Zdrowie i styl życia;sneeze;kichanie;She tried to stop a loud sneeze during the meeting.;Próbowała powstrzymać głośne kichnięcie podczas spotkania.
+B1;Zdrowie i styl życia;headache;ból głowy;I had a terrible headache after a long day at work.;Miałem straszny ból głowy po długim dniu w pracy.
+B1;Zdrowie i styl życia;stomachache;ból brzucha;He couldn’t eat dinner because of a stomachache.;Nie mógł zjeść obiadu z powodu bólu brzucha.
+B1;Zdrowie i styl życia;toothache;ból zęba;She went to the dentist because of a toothache.;Poszła do dentysty z powodu bólu zęba.
+B1;Zdrowie i styl życia;backache;ból pleców;A long flight gave him a terrible backache.;Długi lot spowodował u niego okropny ból pleców.
+B1;Zdrowie i styl życia;pain;ból;The pain in her leg was getting stronger.;Ból w jej nodze stawał się coraz silniejszy.
+B1;Zdrowie i styl życia;injury;kontuzja;He suffered a knee injury while playing football.;Doznał kontuzji kolana podczas gry w piłkę.
+B1;Zdrowie i styl życia;wound;rana;The wound healed slowly but without problems.;Rana goiła się powoli, ale bez problemów.
+B1;Zdrowie i styl życia;bruise;siniak;She had a big bruise after falling off the bike.;Miała dużego siniaka po upadku z roweru.
+B1;Zdrowie i styl życia;burn;oparzenie;He got a burn while cooking dinner.;Oparzył się podczas gotowania obiadu.
+B1;Zdrowie i styl życia;cut;skaleczenie;I got a small cut on my finger while chopping vegetables.;Zrobiłem sobie małe skaleczenie na palcu podczas krojenia warzyw.
+B1;Zdrowie i styl życia;doctor;lekarz;The doctor examined the patient carefully.;Lekarz dokładnie zbadał pacjenta.
+B1;Zdrowie i styl życia;nurse;pielęgniarka;The nurse gave him the right medicine.;Pielęgniarka podała mu odpowiednie lekarstwo.
+B1;Zdrowie i styl życia;dentist;dentysta;The dentist told me I need to brush my teeth better.;Dentysta powiedział mi, że muszę lepiej myć zęby.
+B1;Zdrowie i styl życia;surgeon;chirurg;The surgeon performed a difficult operation.;Chirurg przeprowadził trudną operację.
+B1;Zdrowie i styl życia;hospital;szpital;She stayed in the hospital for three days.;Ona przebywała w szpitalu przez trzy dni.
+B1;Zdrowie i styl życia;clinic;przychodnia;He went to the clinic for a regular check-up.;Poszedł do przychodni na rutynowe badanie.
+B1;Zdrowie i styl życia;pharmacy;apteka;I bought some vitamins at the pharmacy.;Kupiłem witaminy w aptece.
+B1;Zdrowie i styl życia;medicine;lekarstwo;This medicine will help you feel better.;To lekarstwo pomoże ci poczuć się lepiej.
+B1;Zdrowie i styl życia;pill;tabletka;She takes a pill every morning after breakfast.;Ona bierze tabletkę każdego ranka po śniadaniu.
+B1;Zdrowie i styl życia;injection;zastrzyk;The nurse gave him an injection in the arm.;Pielęgniarka zrobiła mu zastrzyk w ramię.
+B1;Zdrowie i styl życia;treatment;leczenie;The treatment will take about two weeks.;Leczenie potrwa około dwóch tygodni.
+B1;Zdrowie i styl życia;operation;operacja;The operation was successful and he recovered quickly.;Operacja zakończyła się sukcesem i szybko doszedł do siebie.
+B1;Zdrowie i styl życia;first aid;pierwsza pomoc;She learned first aid at school.;Nauczyła się pierwszej pomocy w szkole.
+B1;Zdrowie i styl życia;ambulance;karetka;The ambulance arrived in five minutes.;Karetka przyjechała w pięć minut.
+B1;Zdrowie i styl życia;emergency;nagły wypadek;They had to leave because of an emergency.;Musieli wyjść z powodu nagłego wypadku.
+B1;Zdrowie i styl życia;recovery;powrót do zdrowia;His recovery took longer than expected.;Jego powrót do zdrowia trwał dłużej niż oczekiwano.
+B1;Zdrowie i styl życia;diet;dieta;She started a diet to lose some weight.;Zaczęła dietę, żeby trochę schudnąć.
+B1;Zdrowie i styl życia;exercise;ćwiczenie;Regular exercise is good for your heart.;Regularne ćwiczenia są dobre dla serca.
+B1;Zdrowie i styl życia;workout;trening;He does a short workout every morning.;On robi krótki trening każdego ranka.
+B1;Zdrowie i styl życia;fitness;kondycja;Swimming is a great way to improve fitness.;Pływanie to świetny sposób na poprawę kondycji.
+B1;Zdrowie i styl życia;healthy food;zdrowa żywność;They try to eat only healthy food.;Oni starają się jeść tylko zdrową żywność.
+B1;Zdrowie i styl życia;junk food;śmieciowe jedzenie;Children often prefer junk food to vegetables.;Dzieci często wolą śmieciowe jedzenie od warzyw.
+B1;Zdrowie i styl życia;vegetarian;wegetarianin;My friend is a vegetarian and doesn’t eat meat.;Mój przyjaciel jest wegetarianinem i nie je mięsa.
+B1;Zdrowie i styl życia;vegan;weganin;She became vegan two years ago.;Ona została weganką dwa lata temu.
+B1;Zdrowie i styl życia;stress;stres;He felt a lot of stress before the exam.;On czuł duży stres przed egzaminem.
+B1;Zdrowie i styl życia;depression;depresja;Depression is a serious mental illness.;Depresja to poważna choroba psychiczna.
+B1;Zdrowie i styl życia;mental health;zdrowie psychiczne;Talking to friends helps my mental health.;Rozmowa z przyjaciółmi pomaga mojemu zdrowiu psychicznemu.
+B1;Zdrowie i styl życia;relaxation;relaks;Reading a book is a form of relaxation for her.;Czytanie książki to dla niej forma relaksu.
+B1;Zdrowie i styl życia;sleep;sen;Eight hours of sleep is important for health.;Osiem godzin snu jest ważne dla zdrowia.
+B1;Zdrowie i styl życia;rest;odpoczynek;He took a short rest after lunch.;On zrobił sobie krótki odpoczynek po obiedzie.
+B1;Zdrowie i styl życia;energy;energia;I don’t have much energy in the morning.;Nie mam dużo energii rano.
+B1;Zdrowie i styl życia;strength;siła;The athlete showed great strength during the competition.;Zawodnik pokazał dużą siłę podczas zawodów.
+B1;Zdrowie i styl życia;well-being;dobre samopoczucie;Meditation improves my sense of well-being.;Medytacja poprawia moje samopoczucie.
+B1;Zdrowie i styl życia;hygiene;higiena;Good hygiene is important in everyday life.;Dobra higiena jest ważna w codziennym życiu.
+B1;Zdrowie i styl życia;habit;nawyk;Brushing your teeth twice a day is a good habit.;Mycie zębów dwa razy dziennie to dobry nawyk.
+B1;Zdrowie i styl życia;addiction;uzależnienie;Smoking can lead to addiction.;Palenie może prowadzić do uzależnienia.
+B1;Zdrowie i styl życia;smoking;palenie;Smoking is not allowed in this building.;Palenie jest zabronione w tym budynku.
+B1;Zdrowie i styl życia;alcohol;alkohol;Too much alcohol is bad for your health.;Zbyt dużo alkoholu szkodzi zdrowiu.
+B1;Zdrowie i styl życia;drug;narkotyk;The police found illegal drugs in his car.;Policja znalazła nielegalne narkotyki w jego samochodzie.
+B1;Zdrowie i styl życia;therapy;terapia;She started therapy to deal with stress.;Rozpoczęła terapię, żeby poradzić sobie ze stresem.
+B1;Zdrowie i styl życia;check-up;badanie kontrolne;He goes for a check-up every six months.;On chodzi na badanie kontrolne co sześć miesięcy.
+B1;Zdrowie i styl życia;vaccination;szczepienie;Vaccination protects us from dangerous diseases.;Szczepienie chroni nas przed groźnymi chorobami.
+B1;Zdrowie i styl życia;symptom;objaw;A cough is a common symptom of a cold.;Kaszel jest częstym objawem przeziębienia.
+B1;Zdrowie i styl życia;diagnosis;diagnoza;The doctor gave him a clear diagnosis.;Lekarz postawił mu jasną diagnozę.
+B2;Kultura i sztuka;art;sztuka;Art can express emotions that words cannot.;Sztuka może wyrażać emocje, których nie oddadzą słowa.
+B2;Kultura i sztuka;artist;artysta;The artist spent three years working on this project.;Artysta spędził trzy lata pracując nad tym projektem.
+B2;Kultura i sztuka;painting;obraz;Her favorite painting hangs in the living room.;Jej ulubiony obraz wisi w salonie.
+B2;Kultura i sztuka;sculpture;rzeźba;That sculpture was made entirely of wood.;Ta rzeźba została wykonana w całości z drewna.
+B2;Kultura i sztuka;exhibition;wystawa;The new exhibition attracted thousands of visitors.;Nowa wystawa przyciągnęła tysiące zwiedzających.
+B2;Kultura i sztuka;gallery;galeria;We went to a gallery to see local artists' work.;Poszliśmy do galerii, aby zobaczyć prace lokalnych artystów.
+B2;Kultura i sztuka;museum;muzeum;The museum closes at six in the evening.;Muzeum zamyka się o szóstej wieczorem.
+B2;Kultura i sztuka;portrait;portret;She painted a portrait of her grandmother.;Namalowała portret swojej babci.
+B2;Kultura i sztuka;landscape;pejzaż;The landscape in this painting looks so peaceful.;Pejzaż na tym obrazie wygląda tak spokojnie.
+B2;Kultura i sztuka;abstract art;sztuka abstrakcyjna;Abstract art is sometimes difficult to understand.;Sztuka abstrakcyjna bywa czasem trudna do zrozumienia.
+B2;Kultura i sztuka;modern art;sztuka nowoczesna;Modern art often breaks traditional rules.;Sztuka nowoczesna często łamie tradycyjne zasady.
+B2;Kultura i sztuka;classical art;sztuka klasyczna;Classical art is displayed in many European museums.;Sztuka klasyczna jest prezentowana w wielu europejskich muzeach.
+B2;Kultura i sztuka;literature;literatura;She studies English literature at university.;Studiuje literaturę angielską na uniwersytecie.
+B2;Kultura i sztuka;novel;powieść;He is writing a novel about life in the 19th century.;On pisze powieść o życiu w XIX wieku.
+B2;Kultura i sztuka;short story;opowiadanie;I read an interesting short story before bed.;Przeczytałem ciekawe opowiadanie przed snem.
+B2;Kultura i sztuka;poem;wiersz;This poem was written by a famous Polish poet.;Ten wiersz został napisany przez znanego polskiego poetę.
+B2;Kultura i sztuka;poet;poeta;The poet was invited to speak at the festival.;Poeta został zaproszony, aby wystąpić na festiwalu.
+B2;Kultura i sztuka;writer;pisarz;She is a writer of children's books.;Jest pisarką książek dla dzieci.
+B2;Kultura i sztuka;author;autor;The author of this novel lives in London.;Autor tej powieści mieszka w Londynie.
+B2;Kultura i sztuka;drama;dramat;The drama on stage moved the audience to tears.;Dramat na scenie wzruszył publiczność do łez.
+B2;Kultura i sztuka;playwright;dramatopisarz;Shakespeare is the most famous playwright in history.;Szekspir jest najsłynniejszym dramatopisarzem w historii.
+B2;Kultura i sztuka;stage;scena;The actor walked confidently onto the stage.;Aktor wszedł pewnie na scenę.
+B2;Kultura i sztuka;performance;występ;The performance lasted over two hours.;Występ trwał ponad dwie godziny.
+B2;Kultura i sztuka;audience;publiczność;The audience applauded loudly after the concert.;Publiczność głośno oklaskiwała po koncercie.
+B2;Kultura i sztuka;actor;aktor;The actor prepared for the role for six months.;Aktor przygotowywał się do roli przez sześć miesięcy.
+B2;Kultura i sztuka;actress;aktorka;The actress wore a beautiful red dress at the premiere.;Aktorka miała na sobie piękną czerwoną suknię na premierze.
+B2;Kultura i sztuka;director;reżyser;The director is working on a new science fiction movie.;Reżyser pracuje nad nowym filmem science fiction.
+B2;Kultura i sztuka;screenwriter;scenarzysta;The screenwriter created a brilliant script.;Scenarzysta stworzył genialny scenariusz.
+B2;Kultura i sztuka;script;scenariusz;The actors rehearsed the script many times.;Aktorzy wielokrotnie ćwiczyli scenariusz.
+B2;Kultura i sztuka;dialogue;dialog;The dialogue in this film sounds very natural.;Dialog w tym filmie brzmi bardzo naturalnie.
+B2;Kultura i sztuka;scene;scena;The last scene of the play surprised everyone.;Ostatnia scena sztuki zaskoczyła wszystkich.
+B2;Kultura i sztuka;theatre;teatr;We bought tickets for the theatre on Friday.;Kupiliśmy bilety do teatru na piątek.
+B2;Kultura i sztuka;cinema;kino;They often go to the cinema on weekends.;Oni często chodzą do kina w weekendy.
+B2;Kultura i sztuka;film;film;This film won several international awards.;Ten film zdobył kilka międzynarodowych nagród.
+B2;Kultura i sztuka;movie;film;That movie is based on a true story.;Ten film jest oparty na prawdziwej historii.
+B2;Kultura i sztuka;documentary;film dokumentalny;The documentary showed the effects of climate change.;Film dokumentalny pokazał skutki zmian klimatycznych.
+B2;Kultura i sztuka;soundtrack;ścieżka dźwiękowa;The soundtrack of this movie is unforgettable.;Ścieżka dźwiękowa tego filmu jest niezapomniana.
+B2;Kultura i sztuka;composer;kompozytor;Mozart is considered a genius composer.;Mozart uważany jest za genialnego kompozytora.
+B2;Kultura i sztuka;conductor;dyrygent;The conductor raised his hands and the orchestra began.;Dyrygent uniósł ręce i orkiestra zaczęła grać.
+B2;Kultura i sztuka;musician;muzyk;He works as a musician in a jazz band.;On pracuje jako muzyk w zespole jazzowym.
+B2;Kultura i sztuka;band;zespół;The band released a new album this year.;Zespół wydał w tym roku nowy album.
+B2;Kultura i sztuka;orchestra;orkiestra;The orchestra played in the national theatre.;Orkiestra zagrała w teatrze narodowym.
+B2;Kultura i sztuka;concert;koncert;The concert tickets sold out in one hour.;Bilety na koncert wyprzedały się w godzinę.
+B2;Kultura i sztuka;festival;festiwal;They are preparing for the summer music festival.;Przygotowują się do letniego festiwalu muzycznego.
+B2;Kultura i sztuka;album;album;Her debut album became a bestseller.;Jej debiutancki album stał się bestsellerem.
+B2;Kultura i sztuka;song;piosenka;That song always reminds me of my childhood.;Ta piosenka zawsze przypomina mi moje dzieciństwo.
+B2;Kultura i sztuka;lyrics;tekst piosenki;The lyrics of this song are very meaningful.;Tekst tej piosenki ma głębokie znaczenie.
+B2;Kultura i sztuka;melody;melodia;The melody of this piece is simple but beautiful.;Melodia tego utworu jest prosta, ale piękna.
+B2;Kultura i sztuka;rhythm;rytm;The rhythm makes everyone want to dance.;Rytm sprawia, że każdy chce tańczyć.
+B2;Kultura i sztuka;dance;taniec;They learned a traditional folk dance.;Nauczyli się tradycyjnego tańca ludowego.
+B2;Kultura i sztuka;dancer;tancerz;The dancer moved gracefully across the stage.;Tancerz poruszał się z gracją po scenie.
+B2;Kultura i sztuka;ballet;balet;The ballet performance received standing ovations.;Spektakl baletowy otrzymał owacje na stojąco.
+B2;Kultura i sztuka;opera;opera;We went to the opera to see 'Carmen'.;Poszliśmy do opery zobaczyć 'Carmen'.
+B2;Kultura i sztuka;costume;kostium;The actors wore traditional costume for the historical play.;Aktorzy mieli na sobie tradycyjne kostiumy do sztuki historycznej.
+B2;Kultura i sztuka;make-up;makijaż sceniczny;Stage make-up helps performers look expressive under strong lights.;Makijaż sceniczny pomaga aktorom wyglądać wyraziście pod mocnym oświetleniem.
+B2;Kultura i sztuka;stage design;scenografia;The stage design created a magical atmosphere in the theatre.;Scenografia stworzyła magiczną atmosferę w teatrze.
+B2;Kultura i sztuka;review;recenzja;The critic wrote a very positive review of the new opera.;Krytyk napisał bardzo pozytywną recenzję nowej opery.
+B2;Kultura i sztuka;criticism;krytyka;The exhibition received both praise and criticism from the press.;Wystawa otrzymała zarówno pochwały, jak i krytykę w prasie.
+B2;Kultura i sztuka;critic;krytyk;The film critic compared the director’s work to a masterpiece.;Krytyk filmowy porównał dzieło reżysera do arcydzieła.
+B2;Kultura i sztuka;masterpiece;arcydzieło;Leonardo da Vinci’s Mona Lisa is considered a masterpiece.;Mona Lisa Leonarda da Vinci jest uważana za arcydzieło.
+B2;Kultura i sztuka;inspiration;inspiracja;The artist found inspiration in nature and everyday life.;Artysta znalazł inspirację w naturze i codziennym życiu.
+B2;Kultura i sztuka;creativity;kreatywność;Creativity is essential for both art and science.;Kreatywność jest niezbędna zarówno w sztuce, jak i w nauce.
+B2;Kultura i sztuka;imagination;wyobraźnia;Children often have a powerful imagination that inspires stories.;Dzieci często mają silną wyobraźnię, która inspiruje opowieści.
+B2;Kultura i sztuka;tradition;tradycja;The festival is held every year to celebrate local tradition.;Festiwal odbywa się co roku, aby uczcić lokalną tradycję.
+B2;Kultura i sztuka;heritage;dziedzictwo;UNESCO protects cultural heritage around the world.;UNESCO chroni dziedzictwo kulturowe na całym świecie.
+B2;Kultura i sztuka;folklore;folklor;The dance group performed a piece based on Polish folklore.;Zespół taneczny wykonał utwór oparty na polskim folklorze.
+B2;Kultura i sztuka;myth;mit;The myth of Icarus teaches a lesson about ambition and risk.;Mit o Ikarze uczy lekcji o ambicji i ryzyku.
+B2;Kultura i sztuka;legend;legenda;King Arthur is one of the most famous legends in European culture.;Król Artur to jedna z najsłynniejszych legend w kulturze europejskiej.
+B2;Kultura i sztuka;symbol;symbol;The dove is a universal symbol of peace.;Gołąb jest uniwersalnym symbolem pokoju.
+B2;Kultura i sztuka;interpretation;interpretacja;Each reader can have a different interpretation of the poem.;Każdy czytelnik może mieć inną interpretację wiersza.
+B2;Kultura i sztuka;message;przesłanie;The movie’s message is that friendship can overcome fear.;Przesłanie filmu jest takie, że przyjaźń może pokonać strach.
+B2;Kultura i sztuka;theme;temat;The main theme of the book is the search for identity.;Głównym tematem książki jest poszukiwanie tożsamości.
+B2;Kultura i sztuka;style;styl;The painter developed his own unique style.;Malarz rozwinął swój własny, unikalny styl.
+B2;Kultura i sztuka;technique;technika;This painting was created using the oil painting technique.;Ten obraz został stworzony przy użyciu techniki olejnej.
+B2;Kultura i sztuka;genre;gatunek;My favorite film genre is science fiction.;Mój ulubiony gatunek filmowy to science fiction.
+B2;Kultura i sztuka;expression;ekspresja;Dance can be a powerful form of personal expression.;Taniec może być potężną formą osobistej ekspresji.
+B2;Kultura i sztuka;audience reaction;reakcja publiczności;The loud applause showed the audience’s positive reaction.;Gromkie brawa pokazały pozytywną reakcję publiczności.
+B2;Kultura i sztuka;box office;sprzedaż biletów;The film broke records at the box office.;Film pobił rekordy sprzedaży biletów.
+B2;Kultura i sztuka;award;nagroda;The writer received an international award for his novel.;Pisarz otrzymał międzynarodową nagrodę za swoją powieść.
+B2;Kultura i sztuka;prize;nagroda;She won first prize in the poetry competition.;Wygrała pierwszą nagrodę w konkursie poetyckim.
+B2;Nauka i technologia;science;nauka;Science advances when we start asking better questions.;Nauka posuwa się naprzód, gdy zaczynamy zadawać lepsze pytania.
+B2;Nauka i technologia;scientist;naukowiec;The scientist spent months verifying the results before publishing.;Naukowiec spędził miesiące na weryfikowaniu wyników przed publikacją.
+B2;Nauka i technologia;experiment;eksperyment;In our experiment, the plants grew faster with more light.;W naszym eksperymencie rośliny rosły szybciej przy większej ilości światła.
+B2;Nauka i technologia;research;badania;Funding for medical research has increased significantly this year.;Finansowanie badań medycznych znacząco wzrosło w tym roku.
+B2;Nauka i technologia;discovery;odkrycie;The accidental discovery changed the direction of the whole project.;Przypadkowe odkrycie zmieniło kierunek całego projektu.
+B2;Nauka i technologia;invention;wynalazek;Her new invention could reduce energy consumption in homes.;Jej nowy wynalazek może zmniejszyć zużycie energii w domach.
+B2;Nauka i technologia;laboratory;laboratorium;All samples were analyzed in a certified laboratory.;Wszystkie próbki przeanalizowano w certyfikowanym laboratorium.
+B2;Nauka i technologia;evidence;dowód;There isn’t enough evidence to support that claim yet.;Nie ma jeszcze wystarczających dowodów, aby poprzeć to twierdzenie.
+B2;Nauka i technologia;hypothesis;hipoteza;The hypothesis was tested against the new data set.;Hipoteza została sprawdzona na nowym zbiorze danych.
+B2;Nauka i technologia;theory;teoria;According to the theory, small changes can lead to big effects.;Zgodnie z teorią niewielkie zmiany mogą prowadzić do dużych efektów.
+B2;Nauka i technologia;analysis;analiza;A deeper analysis revealed several hidden patterns.;Głębsza analiza ujawniła kilka ukrytych wzorców.
+B2;Nauka i technologia;data;dane;We need more data before we can draw conclusions.;Potrzebujemy więcej danych, zanim wyciągniemy wnioski.
+B2;Nauka i technologia;result;wynik;The result confirmed what we had predicted.;Wynik potwierdził to, co przewidywaliśmy.
+B2;Nauka i technologia;conclusion;wniosek;The conclusion was clear: the method is reliable.;Wniosek był jasny: metoda jest wiarygodna.
+B2;Nauka i technologia;biology;biologia;Biology explains how living organisms function and evolve.;Biologia wyjaśnia, jak funkcjonują i ewoluują organizmy żywe.
+B2;Nauka i technologia;chemistry;chemia;In chemistry class we learned how acids react with bases.;Na lekcji chemii uczyliśmy się, jak kwasy reagują z zasadami.
+B2;Nauka i technologia;physics;fizyka;Physics helps us understand why the planets move.;Fizyka pomaga nam zrozumieć, dlaczego planety się poruszają.
+B2;Nauka i technologia;mathematics;matematyka;Mathematics provides the language of modern science.;Matematyka dostarcza języka współczesnej nauce.
+B2;Nauka i technologia;astronomy;astronomia;Astronomy lets us look back in time by observing distant stars.;Astronomia pozwala nam zajrzeć w przeszłość, obserwując odległe gwiazdy.
+B2;Nauka i technologia;geology;geologia;Geology shows how mountains were formed over millions of years.;Geologia pokazuje, jak góry powstawały przez miliony lat.
+B2;Nauka i technologia;ecology;ekologia;Good ecology policies protect habitats and biodiversity.;Dobra polityka ekologiczna chroni siedliska i bioróżnorodność.
+B2;Nauka i technologia;genetics;genetyka;Genetics studies how traits are passed from parents to children.;Genetyka bada, jak cechy są przekazywane z rodziców na dzieci.
+B2;Nauka i technologia;medicine;medycyna;Modern medicine relies on evidence rather than tradition.;Współczesna medycyna opiera się na dowodach, a nie na tradycji.
+B2;Nauka i technologia;engineering;inżynieria;Engineering turns scientific ideas into practical solutions.;Inżynieria zamienia naukowe pomysły w praktyczne rozwiązania.
+B2;Nauka i technologia;robotics;robotyka;Robotics is transforming factories through automation.;Robotyka zmienia fabryki dzięki automatyzacji.
+B2;Nauka i technologia;artificial intelligence;sztuczna inteligencja;Artificial intelligence can detect patterns that humans might miss.;Sztuczna inteligencja potrafi wykrywać wzorce, które ludziom mogą umknąć.
+B2;Nauka i technologia;nanotechnology;nanotechnologia;Nanotechnology enables materials with surprising properties.;Nanotechnologia umożliwia tworzenie materiałów o zaskakujących właściwościach.
+B2;Nauka i technologia;innovation;innowacja;True innovation often begins with a simple question: why not?;Prawdziwa innowacja często zaczyna się od prostego pytania: dlaczego nie?
+B2;Nauka i technologia;progress;postęp;Technological progress has changed the way we communicate.;Postęp technologiczny zmienił sposób, w jaki się komunikujemy.
+B2;Nauka i technologia;development;rozwój;Sustainable development balances growth with environmental care.;Zrównoważony rozwój łączy wzrost z troską o środowisko.
+B2;Nauka i technologia;technology;technologia;New technology can solve old problems in unexpected ways.;Nowa technologia może rozwiązywać stare problemy w nieoczekiwany sposób.
+B2;Nauka i technologia;device;urządzenie;This small device tracks your heart rate all day.;To małe urządzenie śledzi tętno przez cały dzień.
+B2;Nauka i technologia;machine;maszyna;The machine can sort thousands of letters per hour.;Ta maszyna potrafi sortować tysiące listów na godzinę.
+B2;Nauka i technologia;engine;silnik;A hybrid engine uses both electricity and fuel.;Silnik hybrydowy wykorzystuje zarówno prąd, jak i paliwo.
+B2;Nauka i technologia;computer;komputer;My computer crashed because it ran out of memory.;Mój komputer zawiesił się, bo skończyła mu się pamięć.
+B2;Nauka i technologia;software;oprogramowanie;The new software makes video editing much faster.;Nowe oprogramowanie znacznie przyspiesza montaż wideo.
+B2;Nauka i technologia;hardware;sprzęt komputerowy;Upgrading the hardware extended the laptop’s life.;Modernizacja sprzętu wydłużyła życie laptopa.
+B2;Nauka i technologia;application;aplikacja;This application helps students organize their notes.;Ta aplikacja pomaga studentom porządkować notatki.
+B2;Nauka i technologia;internet;internet;The internet connects people across continents in seconds.;Internet łączy ludzi na różnych kontynentach w kilka sekund.
+B2;Nauka i technologia;network;sieć;A secure network prevents unauthorized access.;Bezpieczna sieć zapobiega nieautoryzowanemu dostępowi.
+B2;Nauka i technologia;database;baza danych;The customer database must be backed up regularly.;Bazę danych klientów trzeba regularnie tworzyć w kopii zapasowej.
+B2;Nauka i technologia;cloud computing;przetwarzanie w chmurze;Cloud computing lets you scale resources on demand.;Przetwarzanie w chmurze pozwala skalować zasoby na żądanie.
+B2;Nauka i technologia;virtual reality;wirtualna rzeczywistość;Virtual reality can simulate dangerous situations safely.;Wirtualna rzeczywistość może bezpiecznie symulować niebezpieczne sytuacje.
+B2;Nauka i technologia;augmented reality;rozszerzona rzeczywistość;Augmented reality adds useful information to what you see.;Rozszerzona rzeczywistość dodaje przydatne informacje do tego, co widzisz.
+B2;Nauka i technologia;cybersecurity;bezpieczeństwo cybernetyczne;Good cybersecurity begins with strong passwords and updates.;Dobre bezpieczeństwo cybernetyczne zaczyna się od silnych haseł i aktualizacji.
+B2;Nauka i technologia;encryption;szyfrowanie;End‑to‑end encryption keeps private messages secure.;Szyfrowanie typu end‑to‑end chroni prywatne wiadomości.
+B2;Nauka i technologia;satellite;satelita;The weather satellite sent clear images of the storm.;Satelita meteorologiczny przesłał wyraźne zdjęcia burzy.
+B2;Nauka i technologia;spacecraft;statek kosmiczny;The spacecraft entered orbit after a precise maneuver.;Statek kosmiczny wszedł na orbitę po precyzyjnym manewrze.
+B2;Nauka i technologia;astronaut;astronauta;Every astronaut trains for years before a mission.;Każdy astronauta trenuje przez lata przed misją.
+B2;Nauka i technologia;planet;planeta;Astronomers discovered a new planet outside our solar system.;Astronomowie odkryli nową planetę poza naszym układem słonecznym.
+B2;Nauka i technologia;universe;wszechświat;Some scientists believe the universe is still expanding.;Niektórzy naukowcy uważają, że wszechświat wciąż się rozszerza.
+B2;Nauka i technologia;galaxy;galaktyka;Our galaxy contains billions of stars and countless planets.;Nasza galaktyka zawiera miliardy gwiazd i niezliczone planety.
+B2;Nauka i technologia;cloning;klonowanie;Cloning raises complex scientific and ethical questions.;Klonowanie rodzi złożone pytania naukowe i etyczne.
+B2;Nauka i technologia;stem cell;komórka macierzysta;Stem cell therapy could help repair damaged tissue.;Terapia komórkami macierzystymi może pomóc naprawić uszkodzone tkanki.
+B2;Nauka i technologia;vaccine;szczepionka;The new vaccine reduced the number of infections dramatically.;Nowa szczepionka drastycznie zmniejszyła liczbę zakażeń.
+B2;Nauka i technologia;antibiotic;antybiotyk;You shouldn’t take an antibiotic without a doctor’s advice.;Nie powinno się brać antybiotyku bez porady lekarza.
+B2;Nauka i technologia;microscope;mikroskop;Under the microscope we saw the cells dividing.;Pod mikroskopem zobaczyliśmy dzielące się komórki.
+B2;Nauka i technologia;telescope;teleskop;A powerful telescope revealed details on the planet’s surface.;Potężny teleskop ujawnił szczegóły na powierzchni planety.
+B2;Nauka i technologia;electricity;elektryczność;Electricity must be handled carefully to avoid accidents.;Z elektrycznością trzeba obchodzić się ostrożnie, aby uniknąć wypadków.
+B2;Nauka i technologia;magnetism;magnetyzm;Magnetism explains why the compass needle points north.;Magnetyzm wyjaśnia, dlaczego igła kompasu wskazuje północ.
+B2;Nauka i technologia;radiation;promieniowanie;Too much radiation can damage living tissue.;Zbyt duże promieniowanie może uszkodzić żywe tkanki.
+B2;Nauka i technologia;nuclear energy;energia jądrowa;Nuclear energy produces electricity with very low emissions.;Energia jądrowa wytwarza prąd przy bardzo niskich emisjach.
+B2;Nauka i technologia;renewable energy;energia odnawialna;Renewable energy sources are growing every year.;Źródła energii odnawialnej rosną z roku na rok.
+B2;Nauka i technologia;solar panel;panel słoneczny;A solar panel converts sunlight into electricity.;Panel słoneczny przekształca światło słoneczne w energię elektryczną.
+B2;Nauka i technologia;wind turbine;turbina wiatrowa;A wind turbine generates power from moving air.;Turbina wiatrowa wytwarza energię z poruszającego się powietrza.
+B2;Nauka i technologia;battery;bateria;This battery charges to eighty percent in half an hour.;Ta bateria ładuje się do osiemdziesięciu procent w pół godziny.
+B2;Nauka i technologia;innovation hub;centrum innowacji;The city opened an innovation hub for startups and researchers.;Miasto otworzyło centrum innowacji dla startupów i badaczy.
+B2;Nauka i technologia;scientific community;środowisko naukowe;The scientific community reviewed the paper and suggested improvements.;Środowisko naukowe zrecenzowało artykuł i zasugerowało ulepszenia.
+B2;Nauka i technologia;laboratory equipment;sprzęt laboratoryjny;Handle laboratory equipment carefully to avoid contamination.;Obchodź się ostrożnie ze sprzętem laboratoryjnym, aby uniknąć zanieczyszczeń.
+B2;Nauka i technologia;AI algorithm;algorytm SI;An AI algorithm learned to recognize tumors in scans.;Algorytm SI nauczył się rozpoznawać guzy na skanach.
+B2;Nauka i technologia;quantum physics;fizyka kwantowa;Quantum physics challenges our common sense about reality.;Fizyka kwantowa podważa nasze zdroworozsądkowe wyobrażenia o rzeczywistości.
+B2;Nauka i technologia;DNA sequence;sekwencja DNA;The DNA sequence revealed a mutation linked to the disease.;Sekwencja DNA ujawniła mutację powiązaną z chorobą.
+B2;Polityka i społeczeństwo;politics;polityka;Politics often divides people but also unites them for common goals.;Polityka często dzieli ludzi, ale także jednoczy ich we wspólnych celach.
+B2;Polityka i społeczeństwo;politician;polityk;The politician gave a long speech before the election.;Polityk wygłosił długie przemówienie przed wyborami.
+B2;Polityka i społeczeństwo;government;rząd;The government announced new economic reforms.;Rząd ogłosił nowe reformy gospodarcze.
+B2;Polityka i społeczeństwo;parliament;parlament;The parliament passed a new law yesterday.;Parlament uchwalił wczoraj nowe prawo.
+B2;Polityka i społeczeństwo;president;prezydent;The president visited several European countries.;Prezydent odwiedził kilka krajów europejskich.
+B2;Polityka i społeczeństwo;prime minister;premier;The prime minister met with foreign leaders.;Premier spotkał się z zagranicznymi przywódcami.
+B2;Polityka i społeczeństwo;minister;minister;The minister of health spoke about new hospitals.;Minister zdrowia mówił o nowych szpitalach.
+B2;Polityka i społeczeństwo;mayor;burmistrz;The mayor opened a new park in the city center.;Burmistrz otworzył nowy park w centrum miasta.
+B2;Polityka i społeczeństwo;law;prawo;Everyone must obey the law.;Każdy musi przestrzegać prawa.
+B2;Polityka i społeczeństwo;constitution;konstytucja;The constitution guarantees freedom of speech.;Konstytucja gwarantuje wolność słowa.
+B2;Polityka i społeczeństwo;election;wybory;The election will take place next Sunday.;Wybory odbędą się w przyszłą niedzielę.
+B2;Polityka i społeczeństwo;vote;głosować;Citizens can vote for their preferred candidate.;Obywatele mogą głosować na swojego kandydata.
+B2;Polityka i społeczeństwo;voter;wyborca;Each voter receives a ballot paper.;Każdy wyborca otrzymuje kartę do głosowania.
+B2;Polityka i społeczeństwo;candidate;kandydat;The candidate promised to improve education.;Kandydat obiecał poprawić edukację.
+B2;Polityka i społeczeństwo;party;partia;The new party is growing in popularity.;Nowa partia zyskuje na popularności.
+B2;Polityka i społeczeństwo;policy;polityka działania;The company's policy on safety is very strict.;Polityka firmy dotycząca bezpieczeństwa jest bardzo rygorystyczna.
+B2;Polityka i społeczeństwo;democracy;demokracja;Democracy allows people to choose their leaders.;Demokracja pozwala ludziom wybierać swoich przywódców.
+B2;Polityka i społeczeństwo;dictatorship;dyktatura;The country suffered under dictatorship for years.;Kraj cierpiał przez lata pod dyktaturą.
+B2;Polityka i społeczeństwo;monarchy;monarchia;The monarchy still plays a symbolic role.;Monarchia nadal odgrywa symboliczną rolę.
+B2;Polityka i społeczeństwo;republic;republika;Poland is a republic with democratic institutions.;Polska jest republiką z demokratycznymi instytucjami.
+B2;Polityka i społeczeństwo;human rights;prawa człowieka;Human rights must be respected everywhere.;Prawa człowieka muszą być respektowane wszędzie.
+B2;Polityka i społeczeństwo;freedom;wolność;Freedom of expression is important in a democracy.;Wolność wypowiedzi jest ważna w demokracji.
+B2;Polityka i społeczeństwo;justice;sprawiedliwość;The victims demanded justice in court.;Ofiary domagały się sprawiedliwości w sądzie.
+B2;Polityka i społeczeństwo;equality;równość;Equality before the law is a basic principle.;Równość wobec prawa to podstawowa zasada.
+B2;Polityka i społeczeństwo;immigration;imigracja;Immigration has increased in recent years.;Imigracja wzrosła w ostatnich latach.
+B2;Polityka i społeczeństwo;emigration;emigracja;Emigration from rural areas is common.;Emigracja z obszarów wiejskich jest powszechna.
+B2;Polityka i społeczeństwo;refugee;uchodźca;The refugee asked for asylum.;Uchodźca poprosił o azyl.
+B2;Polityka i społeczeństwo;society;społeczeństwo;Society changes with new technologies.;Społeczeństwo zmienia się wraz z nowymi technologiami.
+B2;Polityka i społeczeństwo;community;społeczność;The local community organized a charity event.;Lokalna społeczność zorganizowała wydarzenie charytatywne.
+B2;Polityka i społeczeństwo;citizen;obywatel;Every citizen has certain rights and duties.;Każdy obywatel ma określone prawa i obowiązki.
+B2;Polityka i społeczeństwo;public opinion;opinia publiczna;Public opinion influenced the decision.;Opinia publiczna wpłynęła na decyzję.
+B2;Polityka i społeczeństwo;protest;protest;Thousands joined the protest in the capital.;Tysiące ludzi dołączyło do protestu w stolicy.
+B2;Polityka i społeczeństwo;demonstration;demonstracja;The demonstration blocked the main street.;Demonstracja zablokowała główną ulicę.
+B2;Polityka i społeczeństwo;strike;strajk;The workers went on strike for better pay.;Pracownicy rozpoczęli strajk o lepsze płace.
+B2;Polityka i społeczeństwo;conflict;konflikt;The conflict lasted for many years.;Konflikt trwał wiele lat.
+B2;Polityka i społeczeństwo;war;wojna;The war caused massive destruction.;Wojna spowodowała ogromne zniszczenia.
+B2;Polityka i społeczeństwo;peace;pokój;They signed an agreement to ensure peace.;Podpisali porozumienie, aby zapewnić pokój.
+B2;Polityka i społeczeństwo;security;bezpieczeństwo;Security at the airport has been increased.;Bezpieczeństwo na lotnisku zostało zwiększone.
+B2;Polityka i społeczeństwo;army;armia;The army protected the borders.;Armia chroniła granice.
+B2;Polityka i społeczeństwo;soldier;żołnierz;The soldier returned home after the mission.;Żołnierz wrócił do domu po misji.
+B2;Polityka i społeczeństwo;police;policja;The police arrested the suspect.;Policja aresztowała podejrzanego.
+B2;Polityka i społeczeństwo;crime;przestępstwo;The crime shocked the small town.;Przestępstwo wstrząsnęło małym miasteczkiem.
+B2;Polityka i społeczeństwo;criminal;przestępca;The criminal was sent to prison.;Przestępca trafił do więzienia.
+B2;Polityka i społeczeństwo;prison;więzienie;He spent ten years in prison.;Spędził dziesięć lat w więzieniu.
+B2;Polityka i społeczeństwo;court;sąd;The case went to court last month.;Sprawa trafiła do sądu w zeszłym miesiącu.
+B2;Polityka i społeczeństwo;judge;sędzia;The judge announced the verdict.;Sędzia ogłosił wyrok.
+B2;Polityka i społeczeństwo;lawyer;prawnik;The lawyer defended his client well.;Prawnik dobrze bronił swojego klienta.
+B2;Polityka i społeczeństwo;trial;proces sądowy;The trial attracted a lot of media attention.;Proces sądowy przyciągnął wiele uwagi mediów.
+B2;Polityka i społeczeństwo;sentence;wyrok;The sentence was five years in prison.;Wyrok wynosił pięć lat więzienia.
+B2;Polityka i społeczeństwo;fine;grzywna;He had to pay a fine for speeding.;Musiał zapłacić grzywnę za przekroczenie prędkości.
+B2;Polityka i społeczeństwo;tax;podatek;Citizens must pay tax on their income.;Obywatele muszą płacić podatek od swoich dochodów.
+B2;Polityka i społeczeństwo;budget;budżet;The city council discussed next year’s budget.;Rada miejska omówiła budżet na przyszły rok.
+B2;Polityka i społeczeństwo;economy;gospodarka;The economy is growing steadily.;Gospodarka rozwija się stabilnie.
+B2;Polityka i społeczeństwo;unemployment;bezrobocie;Unemployment is a serious problem.;Bezrobocie jest poważnym problemem.
+B2;Polityka i społeczeństwo;inflation;inflacja;Inflation makes products more expensive.;Inflacja sprawia, że produkty są droższe.
+B2;Polityka i społeczeństwo;poverty;ubóstwo;Many organizations fight against poverty.;Wiele organizacji walczy z ubóstwem.
+B2;Polityka i społeczeństwo;wealth;bogactwo;Wealth is not always a guarantee of happiness.;Bogactwo nie zawsze gwarantuje szczęście.
+B2;Polityka i społeczeństwo;charity;organizacja charytatywna;The charity collected money for sick children.;Organizacja charytatywna zebrała pieniądze dla chorych dzieci.
+B2;Polityka i społeczeństwo;volunteer;wolontariusz;She works as a volunteer in an animal shelter.;Ona pracuje jako wolontariuszka w schronisku dla zwierząt.
+B2;Polityka i społeczeństwo;NGO;organizacja pozarządowa;The NGO helps refugees find housing.;Organizacja pozarządowa pomaga uchodźcom znaleźć mieszkanie.
+B2;Polityka i społeczeństwo;media freedom;wolność mediów;Media freedom is essential for democracy.;Wolność mediów jest niezbędna dla demokracji.
+B2;Polityka i społeczeństwo;censorship;cenzura;Censorship limits access to information.;Cenzura ogranicza dostęp do informacji.
+B2;Polityka i społeczeństwo;corruption;korupcja;Corruption weakens trust in institutions.;Korupcja osłabia zaufanie do instytucji.
+B2;Polityka i społeczeństwo;bribery;łapówkarstwo;He was accused of bribery.;Został oskarżony o łapówkarstwo.
+B2;Polityka i społeczeństwo;globalization;globalizacja;Globalization connects markets worldwide.;Globalizacja łączy rynki na całym świecie.
+B2;Polityka i społeczeństwo;migration crisis;kryzys migracyjny;The migration crisis affected many countries.;Kryzys migracyjny dotknął wiele krajów.
+B2;Polityka i społeczeństwo;climate policy;polityka klimatyczna;Climate policy is becoming more important.;Polityka klimatyczna staje się coraz ważniejsza.
+B2;Polityka i społeczeństwo;foreign policy;polityka zagraniczna;The foreign policy focuses on peace and cooperation.;Polityka zagraniczna koncentruje się na pokoju i współpracy.
+B2;Polityka i społeczeństwo;international relations;stosunki międzynarodowe;International relations influence global stability.;Stosunki międzynarodowe wpływają na stabilność świata.
+B2;Polityka i społeczeństwo;diplomacy;dyplomacja;Diplomacy helped to avoid conflict.;Dyplomacja pomogła uniknąć konfliktu.
+B2;Polityka i społeczeństwo;treaty;traktat;The treaty was signed by both countries.;Traktat został podpisany przez oba kraje.
+B2;Polityka i społeczeństwo;agreement;porozumienie;They reached an agreement after long talks.;Osiągnęli porozumienie po długich rozmowach.
+B2;Polityka i społeczeństwo;sanctions;sankcje;Sanctions were imposed on the country.;Nałożono sankcje na ten kraj.
+B2;Polityka i społeczeństwo;alliance;sojusz;The two nations formed a military alliance.;Dwa narody utworzyły sojusz wojskowy.
+B2;Polityka i społeczeństwo;organization;organizacja;The organization supports young entrepreneurs.;Organizacja wspiera młodych przedsiębiorców.
+B2;Polityka i społeczeństwo;union;unia;The union protects workers’ rights.;Unia chroni prawa pracowników.
+B2;Środowisko naturalne;environment;środowisko;We must protect the environment for future generations.;Musimy chronić środowisko dla przyszłych pokoleń.
+B2;Środowisko naturalne;nature;natura;She loves spending weekends in nature, far from the city.;Ona uwielbia spędzać weekendy na łonie natury, z dala od miasta.
+B2;Środowisko naturalne;wildlife;dzika przyroda;The park is home to a variety of wildlife.;Park jest domem dla różnorodnej dzikiej przyrody.
+B2;Środowisko naturalne;species;gatunek;Scientists discovered a new species of frog.;Naukowcy odkryli nowy gatunek żaby.
+B2;Środowisko naturalne;endangered species;gatunek zagrożony;The panda is an endangered species.;Panda jest gatunkiem zagrożonym.
+B2;Środowisko naturalne;extinct species;gatunek wymarły;Dinosaurs are an extinct species.;Dinozaury to gatunek wymarły.
+B2;Środowisko naturalne;biodiversity;różnorodność biologiczna;Rainforests are important for global biodiversity.;Lasy deszczowe są ważne dla światowej różnorodności biologicznej.
+B2;Środowisko naturalne;ecosystem;ekosystem;Pollution can damage the marine ecosystem.;Zanieczyszczenia mogą uszkodzić morski ekosystem.
+B2;Środowisko naturalne;habitat;siedlisko;Deforestation destroys the natural habitat of animals.;Wyrąb lasów niszczy naturalne siedlisko zwierząt.
+B2;Środowisko naturalne;climate;klimat;The Mediterranean climate is warm and dry.;Klimat śródziemnomorski jest ciepły i suchy.
+B2;Środowisko naturalne;climate change;zmiana klimatu;Climate change is one of the biggest global challenges.;Zmiana klimatu jest jednym z największych globalnych wyzwań.
+B2;Środowisko naturalne;global warming;globalne ocieplenie;Global warming affects sea levels.;Globalne ocieplenie wpływa na poziom mórz.
+B2;Środowisko naturalne;pollution;zanieczyszczenie;Air pollution is a serious problem in big cities.;Zanieczyszczenie powietrza to poważny problem w dużych miastach.
+B2;Środowisko naturalne;air pollution;zanieczyszczenie powietrza;Factories are a source of air pollution.;Fabryki są źródłem zanieczyszczenia powietrza.
+B2;Środowisko naturalne;water pollution;zanieczyszczenie wody;Plastic waste causes water pollution.;Odpady plastikowe powodują zanieczyszczenie wody.
+B2;Środowisko naturalne;soil pollution;zanieczyszczenie gleby;Chemicals can lead to soil pollution.;Chemikalia mogą prowadzić do zanieczyszczenia gleby.
+B2;Środowisko naturalne;waste;odpady;We should reduce waste by recycling more.;Powinniśmy zmniejszać ilość odpadów, więcej recyklingując.
+B2;Środowisko naturalne;recycling;recykling;Recycling helps to save natural resources.;Recykling pomaga oszczędzać zasoby naturalne.
+B2;Środowisko naturalne;renewable energy;energia odnawialna;Solar power is a form of renewable energy.;Energia słoneczna to forma energii odnawialnej.
+B2;Środowisko naturalne;fossil fuels;paliwa kopalne;Burning fossil fuels produces carbon dioxide.;Spalanie paliw kopalnych wytwarza dwutlenek węgla.
+B2;Środowisko naturalne;coal;węgiel;Coal is still used in many power plants.;Węgiel jest wciąż używany w wielu elektrowniach.
+B2;Środowisko naturalne;oil;ropa naftowa;Oil is transported in large tankers.;Ropa naftowa jest transportowana w dużych tankowcach.
+B2;Środowisko naturalne;gas;gaz;Gas is often used for heating homes.;Gaz jest często używany do ogrzewania domów.
+B2;Środowisko naturalne;deforestation;wyrąb lasów;Deforestation increases the risk of floods.;Wyrąb lasów zwiększa ryzyko powodzi.
+B2;Środowisko naturalne;logging;wyrąb;Illegal logging threatens rainforests.;Nielegalny wyrąb zagraża lasom deszczowym.
+B2;Środowisko naturalne;forest fire;pożar lasu;A forest fire destroyed hundreds of trees.;Pożar lasu zniszczył setki drzew.
+B2;Środowisko naturalne;drought;susza;The drought lasted for several months.;Susza trwała kilka miesięcy.
+B2;Środowisko naturalne;flood;powódź;The flood damaged many houses.;Powódź zniszczyła wiele domów.
+B2;Środowisko naturalne;earthquake;trzęsienie ziemi;The earthquake shook the entire city.;Trzęsienie ziemi wstrząsnęło całym miastem.
+B2;Środowisko naturalne;hurricane;huragan;The hurricane caused serious damage to the coast.;Huragan wyrządził poważne szkody na wybrzeżu.
+B2;Środowisko naturalne;tornado;tornado;The tornado destroyed several buildings.;Tornado zniszczyło kilka budynków.
+B2;Środowisko naturalne;volcano;wulkan;The volcano erupted after 50 years of silence.;Wulkan wybuchł po 50 latach ciszy.
+B2;Środowisko naturalne;eruption;erupcja;The eruption covered the village with ash.;Erupcja pokryła wioskę popiołem.
+B2;Środowisko naturalne;tsunami;tsunami;The tsunami hit the coast suddenly.;Tsunami uderzyło nagle w wybrzeże.
+B2;Środowisko naturalne;disaster;katastrofa;The earthquake was a terrible disaster.;Trzęsienie ziemi było straszną katastrofą.
+B2;Środowisko naturalne;natural disaster;klęska żywiołowa;Floods are natural disasters that affect people worldwide.;Powodzie to klęski żywiołowe, które dotykają ludzi na całym świecie.
+B2;Środowisko naturalne;sustainable development;zrównoważony rozwój;Sustainable development balances economy and ecology.;Zrównoważony rozwój łączy gospodarkę i ekologię.
+B2;Środowisko naturalne;ecological footprint;ślad ekologiczny;We need to reduce our ecological footprint.;Musimy zmniejszyć nasz ślad ekologiczny.
+B2;Środowisko naturalne;greenhouse effect;efekt cieplarniany;The greenhouse effect causes global warming.;Efekt cieplarniany powoduje globalne ocieplenie.
+B2;Środowisko naturalne;carbon dioxide;dwutlenek węgla;Carbon dioxide is released when we burn coal.;Dwutlenek węgla uwalnia się podczas spalania węgla.
+B2;Środowisko naturalne;carbon footprint;ślad węglowy;Flying increases your carbon footprint.;Lataniem zwiększasz swój ślad węglowy.
+B2;Środowisko naturalne;ozone layer;warstwa ozonowa;The ozone layer protects us from UV radiation.;Warstwa ozonowa chroni nas przed promieniowaniem UV.
+B2;Środowisko naturalne;renewable resources;zasoby odnawialne;Water and wind are renewable resources.;Woda i wiatr to zasoby odnawialne.
+B2;Środowisko naturalne;non-renewable resources;zasoby nieodnawialne;Coal and oil are non-renewable resources.;Węgiel i ropa naftowa to zasoby nieodnawialne.
+B2;Środowisko naturalne;organic food;żywność ekologiczna;Organic food is often more expensive.;Żywność ekologiczna jest często droższa.
+B2;Środowisko naturalne;pesticide;pestycyd;Farmers use pesticides to protect crops.;Rolnicy używają pestycydów do ochrony upraw.
+B2;Środowisko naturalne;fertilizer;nawóz;The farmer added fertilizer to the soil.;Rolnik dodał nawóz do gleby.
+B2;Środowisko naturalne;compost;kompost;We make compost from food waste.;Robimy kompost z odpadków jedzeniowych.
+B2;Środowisko naturalne;protected area;obszar chroniony;This forest is a protected area.;Ten las to obszar chroniony.
+B2;Środowisko naturalne;national park;park narodowy;We visited a national park during our trip.;Podczas wycieczki odwiedziliśmy park narodowy.
+B2;Środowisko naturalne;reserve;rezerwat;The animals live safely in a reserve.;Zwierzęta żyją bezpiecznie w rezerwacie.
+B2;Środowisko naturalne;sanctuary;rezerwat;The sanctuary protects endangered animals.;Rezerwat chroni zagrożone zwierzęta.
+B2;Środowisko naturalne;environmentalist;ekolog;The environmentalist spoke about climate change.;Ekolog mówił o zmianach klimatycznych.
+B2;Środowisko naturalne;climate activist;aktywistka klimatyczna;The climate activist organized a protest.;Aktywistka klimatyczna zorganizowała protest.
+B2;Środowisko naturalne;protection;ochrona;Nature protection is our responsibility.;Ochrona przyrody to nasza odpowiedzialność.
+B2;Środowisko naturalne;conservation;ochrona przyrody;Conservation programs save endangered animals.;Programy ochrony przyrody ratują zagrożone zwierzęta.
+B2;Środowisko naturalne;ecology campaign;kampania ekologiczna;They launched an ecology campaign in schools.;W szkołach uruchomiono kampanię ekologiczną.
+B2;Środowisko naturalne;renewable project;projekt odnawialny;The city invested in a renewable project.;Miasto zainwestowało w projekt odnawialny.
+B2;Środowisko naturalne;clean energy;czysta energia;Wind turbines produce clean energy.;Turbiny wiatrowe produkują czystą energię.
+B2;Środowisko naturalne;solar farm;farma słoneczna;A new solar farm was built near the town.;Nowa farma słoneczna powstała niedaleko miasta.
+B2;Środowisko naturalne;wind farm;farma wiatrowa;The wind farm supplies electricity to thousands of homes.;Farma wiatrowa dostarcza prąd do tysięcy domów.
+B2;Środowisko naturalne;hydropower;energia wodna;Hydropower uses rivers to generate electricity.;Energia wodna wykorzystuje rzeki do wytwarzania prądu.
+B2;Środowisko naturalne;geothermal energy;energia geotermalna;Iceland uses geothermal energy for heating.;Islandia używa energii geotermalnej do ogrzewania.
+B2;Środowisko naturalne;sustainable lifestyle;zrównoważony styl życia;She tries to live a sustainable lifestyle.;Ona stara się prowadzić zrównoważony styl życia.
+B2;Środowisko naturalne;plastic pollution;zanieczyszczenie plastikiem;Plastic pollution is a threat to oceans.;Zanieczyszczenie plastikiem zagraża oceanom.
+B2;Środowisko naturalne;overfishing;nadmierne połowy;Overfishing reduces fish populations.;Nadmierne połowy zmniejszają populacje ryb.
+B2;Środowisko naturalne;poaching;kłusownictwo;Poaching is a danger to elephants and rhinos.;Kłusownictwo stanowi zagrożenie dla słoni i nosorożców.
+B2;Środowisko naturalne;illegal logging;nielegalny wyrąb;Illegal logging destroys rainforests.;Nielegalny wyrąb niszczy lasy deszczowe.
+B2;Środowisko naturalne;urbanization;urbanizacja;Urbanization changes natural landscapes.;Urbanizacja zmienia naturalne krajobrazy.
+B2;Środowisko naturalne;industrialization;industrializacja;Industrialization led to economic growth.;Industrializacja doprowadziła do wzrostu gospodarczego.
+B2;Środowisko naturalne;green technology;zielona technologia;Green technology helps to reduce emissions.;Zielona technologia pomaga zmniejszyć emisje.
+B2;Środowisko naturalne;eco-friendly product;produkt ekologiczny;They sell eco-friendly products in the store.;W sklepie sprzedają produkty ekologiczne.
