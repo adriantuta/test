@@ -455,3 +455,37 @@ header.app-header {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, .16)
 }
+
+/* Recruitment Form */
+#recruitmentForm .form-control {
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 12px;
+    padding: 10px 12px;
+}
+
+#recruitmentForm .form-control:focus {
+    background: rgba(255, 255, 255, .08);
+    border-color: var(--accent);
+    box-shadow: none;
+}
+
+#recruitmentForm .form-label {
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+#generatedContent {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    min-height: 300px;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+#searchHistory .list-group-item {
+    background-color: transparent;
+    border-color: var(--panel-border);
+    color: var(--text);
+}
