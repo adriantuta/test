@@ -58,6 +58,7 @@ const exercisesSection = document.getElementById('exercisesSection');
 const recruitmentSection = document.getElementById('recruitmentSection');
 
 const backToStudy = document.getElementById('backToStudy');
+const backToStudyFromRecruitment = document.getElementById('backToStudyFromRecruitment');
 const exerciseControls = document.getElementById('exerciseControls');
 const exerciseContainer = document.getElementById('exerciseContainer');
 const exerciseVisibleEl = document.getElementById('exerciseVisible');
@@ -179,7 +180,7 @@ function renderCategories(){
     const learned = getLearnedCount(currentLevel, cat);
     const pct = count ? Math.round(learned/count*100) : 0;
     btn.innerHTML = `<div class="d-flex justify-content-between align-items-center"><div><strong>${cat}</strong> <span class="count">(${count})</span></div><div class="subtle small">${pct}%</div></div>`;
-    btn.addEventListener('click', ()=>{ currentCategory = cat; resetSessionStats(); rebuildListOrder(); showPanel('study'); renderView(); });
+    btn.addEventListener('click', ()=>{ currentCategory = cat; resetSessionStats(); rebuildListOrder(); showStudy(); renderView(); });
     li.appendChild(btn); categoryList.appendChild(li);
   });
 }
@@ -298,26 +299,33 @@ function showView(view){ currentView=view; document.querySelectorAll('.view-tabs
     updateGlobalControlsVisibility();
 }
 
-function showPanel(panelToShow) {
-    [studySection, exercisesSection, recruitmentSection].forEach(section => {
-        section.classList.add('d-none');
-    });
+function showStudy() {
+    studySection.classList.remove('d-none');
+    exercisesSection.classList.add('d-none');
+    recruitmentSection.classList.add('d-none');
+    studyTab.classList.add('active');
+    exercisesTab.classList.remove('active');
+    recruitmentTab.classList.remove('active');
+}
 
-    const activeTabClass = 'active';
-    [studyTab, exercisesTab, recruitmentTab].forEach(tab => tab.classList.remove(activeTabClass));
+function showExercises() {
+    studySection.classList.add('d-none');
+    exercisesSection.classList.remove('d-none');
+    recruitmentSection.classList.add('d-none');
+    studyTab.classList.remove('active');
+    exercisesTab.classList.add('active');
+    recruitmentTab.classList.remove('active');
+    renderExercises();
+}
 
-    if (panelToShow === 'study') {
-        studySection.classList.remove('d-none');
-        studyTab.classList.add(activeTabClass);
-    } else if (panelToShow === 'exercises') {
-        exercisesSection.classList.remove('d-none');
-        exercisesTab.classList.add(activeTabClass);
-        renderExercises();
-    } else if (panelToShow === 'recruitment') {
-        recruitmentSection.classList.remove('d-none');
-        recruitmentTab.classList.add(activeTabClass);
-        loadSearchHistory();
-    }
+function showRecruitment() {
+    studySection.classList.add('d-none');
+    exercisesSection.classList.add('d-none');
+    recruitmentSection.classList.remove('d-none');
+    studyTab.classList.remove('active');
+    exercisesTab.classList.remove('active');
+    recruitmentTab.classList.add('active');
+    loadSearchHistory();
 }
 
 function shuffleArray(arr){ for(let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]]; } }
@@ -499,13 +507,87 @@ document.addEventListener('fullscreenchange', ()=>{
 searchInput.addEventListener('input', ()=> renderCategories());
 
 // Main panel tabs
-studyTab.addEventListener('click', () => showPanel('study'));
-exercisesTab.addEventListener('click', () => showPanel('exercises'));
-recruitmentTab.addEventListener('click', () => {
-    showPanel('recruitment');
-    loadSearchHistory();
-});
-backToStudy.addEventListener('click', () => showPanel('study'));
+studyTab.addEventListener('click', showStudy);
+exercisesTab.addEventListener('click', showExercises);
+recruitmentTab.addEventListener('click', showRecruitment);
+backToStudy.addEventListener('click', showStudy);
+backToStudyFromRecruitment.addEventListener('click', showStudy);
+
+function generateAIContent(position, requirements, pages) {
+    // --- AI Analysis Simulation ---
+    const keywords = [...new Set((requirements.match(/[a-zA-Z0-9\.\+#-]+/g) || []).map(k => k.toLowerCase().replace(/[.,:;]$/, '')))];
+
+    const techDb = {
+        react: { name: 'React', desc: 'Biblioteka JavaScript do budowy interfejsów użytkownika. Kluczowe koncepty: komponenty, JSX, stan, propsy, cykl życia, hooki (useState, useEffect).', type: 'framework' },
+        angular: { name: 'Angular', desc: 'Kompleksowy framework od Google. Kluczowe koncepty: moduły, komponenty, serwisy, dependency injection, RxJS.', type: 'framework' },
+        vue: { name: 'Vue.js', desc: 'Progresywny framework JavaScript. Kluczowe koncepty: dyrektywy (v-if, v-for), komponenty, computed properties, Vuex.', type: 'framework' },
+        javascript: { name: 'JavaScript (ES6+)', desc: 'Podstawa web-developmentu. Kluczowe koncepty: asynchroniczność (Promises, async/await), domknięcia, prototypy, nowe składnie (let/const, arrow functions).', type: 'language' },
+        typescript: { name: 'TypeScript', desc: 'Nadbudowa na JavaScript dodająca statyczne typowanie. Zwiększa bezpieczeństwo i czytelność kodu.', type: 'language' },
+        python: { name: 'Python', desc: 'Wszechstronny język programowania. Kluczowe koncepty: struktury danych, programowanie obiektowe, generatory, dekoratory.', type: 'language' },
+        django: { name: 'Django', desc: 'Wysokopoziomowy framework Python do szybkiego tworzenia bezpiecznych i skalowalnych aplikacji webowych. (MVT, ORM)', type: 'framework' },
+        fastapi: { name: 'FastAPI', desc: 'Nowoczesny i szybki framework Python do budowania API, oparty o standardowe wskazówki typów Pythona.', type: 'framework' },
+        nodejs: { name: 'Node.js', desc: 'Środowisko uruchomieniowe dla JavaScript po stronie serwera. Umożliwia budowanie szybkich i skalowalnych aplikacji sieciowych.', type: 'platform' },
+        sql: { name: 'SQL', desc: 'Język zapytań do zarządzania relacyjnymi bazami danych. Kluczowe komendy: SELECT, JOIN, GROUP BY, INSERT, UPDATE.', type: 'database' },
+        postgresql: { name: 'PostgreSQL', desc: 'Zaawansowana, obiektowo-relacyjna baza danych o otwartym kodzie źródłowym.', type: 'database' },
+        docker: { name: 'Docker', desc: 'Platforma do konteneryzacji aplikacji, umożliwiająca ich uruchamianie w izolowanych środowiskach.', type: 'devops' },
+        kubernetes: { name: 'Kubernetes (K8s)', desc: 'Platforma do automatyzacji, wdrażania i zarządzania skonteneryzowanymi aplikacjami.', type: 'devops' },
+        git: { name: 'Git', desc: 'Rozproszony system kontroli wersji, niezbędny w pracy zespołowej. Kluczowe komendy: commit, push, pull, branch, merge.', type: 'tools' }
+    };
+
+    const identifiedTech = keywords.map(k => techDb[k]).filter(Boolean);
+
+    // --- Content Generation ---
+    let html = `<h3>Kompendium Wiedzy dla: ${position}</h3>`;
+    html += `<p>Wygenerowano na podstawie Twoich wymagań. To ${pages}-stronicowe kompendium pomoże Ci usystematyzować naukę.</p>`;
+
+    // 1. Analiza Wymagań
+    html += `<h4>1. Kluczowe Technologie i Koncepty</h4>`;
+    if (identifiedTech.length > 0) {
+        html += `<p>Na podstawie analizy, główne obszary, na których należy się skupić, to:</p><ul>`;
+        identifiedTech.forEach(t => {
+            html += `<li><strong>${t.name}:</strong> ${t.desc}</li>`;
+        });
+        html += `</ul>`;
+    } else {
+        html += `<p>Nie zidentyfikowano konkretnych technologii w Twoich wymaganiach. Skup się na ogólnych podstawach dla stanowiska ${position}.</p>`;
+    }
+
+    // 2. Sugerowany Plan Nauki
+    html += `<h4 class="mt-4">2. Sugerowany Plan Nauki (${Math.ceil(pages / 2)} dni)</h4>`;
+    html += `<ol>`;
+    const coreLangs = identifiedTech.filter(t => t.type === 'language');
+    const frameworks = identifiedTech.filter(t => t.type === 'framework');
+    const databases = identifiedTech.filter(t => t.type === 'database');
+    const devops = identifiedTech.filter(t => t.type === 'devops');
+
+    if (coreLangs.length > 0) html += `<li><strong>Dzień 1-2: Fundamenty Językowe.</strong> Odśwież i ugruntuj wiedzę z: ${coreLangs.map(t => t.name).join(', ')}. Skup się na zaawansowanych konceptach.</li>`;
+    if (frameworks.length > 0) html += `<li><strong>Dzień 3-4: Frameworki.</strong> Głębokie zanurzenie w ${frameworks.map(t => t.name).join(', ')}. Zbuduj mały projekt, aby przećwiczyć kluczowe funkcje.</li>`;
+    if (databases.length > 0) html += `<li><strong>Dzień 5: Bazy Danych.</strong> Przećwicz projektowanie schematów i pisanie złożonych zapytań w ${databases.map(t => t.name).join(', ')}.</li>`;
+    if (devops.length > 0) html += `<li><strong>Dzień 6: DevOps i Narzędzia.</strong> Zrozumienie podstaw konteneryzacji (${devops.map(t => t.name).join(', ')}) i pracy z Git.</li>`;
+    html += `<li><strong>Dzień 7: Przygotowanie do Rozmowy.</strong> Przejrzyj poniższe pytania i przygotuj odpowiedzi.</li>`;
+    html += `</ol>`;
+
+    // 3. Przykładowe Pytania Rekrutacyjne
+    if (pages > 2) {
+        html += `<h4 class="mt-4">3. Przykładowe Pytania Rekrutacyjne</h4>`;
+        html += `<h5>Techniczne:</h5><ul>`;
+        if (keywords.includes('react')) html += `<li>Jak działa wirtualny DOM w React?</li>`;
+        if (keywords.includes('javascript')) html += `<li>Wyjaśnij różnicę między 'let', 'const' i 'var'.</li>`;
+        if (keywords.includes('python')) html += `<li>Czym są dekoratory w Pythonie i do czego służą?</li>`;
+        if (keywords.includes('sql')) html += `<li>Opisz różnicę między LEFT JOIN a INNER JOIN.</li>`;
+        html += `<li>Jakie są zalety i wady mikroserwisów?</li>`;
+        html += `</ul>`;
+
+        html += `<h5>Behawioralne:</h5><ul>`;
+        html += `<li>Opisz najtrudniejszy problem techniczny, z jakim się zmierzyłeś i jak go rozwiązałeś.</li>`;
+        html += `<li>Jak podchodzisz do nauki nowych technologii?</li>`;
+        html += `</ul>`;
+    }
+
+    html += `<p class="mt-4"><em>To kompendium zostało wygenerowane przez AI. Powodzenia na rozmowie!</em></p>`;
+    return html;
+}
+
 
 // Recruitment Form Logic
 recruitmentForm.addEventListener('submit', (e) => {
@@ -519,28 +601,12 @@ recruitmentForm.addEventListener('submit', (e) => {
     generateButton.disabled = true;
     savePdfButton.classList.add('d-none');
 
-    // Symulacja generowania treści
+    // Symulacja opóźnienia, aby interfejs był bardziej responsywny
     setTimeout(() => {
-        const aiResponse = `
-            <h3>Wygenerowane Kompendium dla: ${position}</h3>
-            <p>Poniżej znajduje się streszczenie kluczowych zagadnień na podstawie dostarczonych wymagań. Pamiętaj, że jest to treść demonstracyjna.</p>
-            <h4>Analiza Wymagań:</h4>
-            <p>Wymagania, które podałeś (${requirements}), sugerują skupienie się na następujących obszarach:</p>
-            <ul>
-                <li><strong>Technologie Front-endowe:</strong> Zrozumienie HTML, CSS i JavaScript jest absolutnie kluczowe.</li>
-                <li><strong>Frameworki:</strong> Doświadczenie z nowoczesnymi frameworkami jak React, Angular lub Vue.js jest często wymagane.</li>
-                <li><strong>Narzędzia Budowania:</strong> Znajomość narzędzi takich jak Webpack, Babel czy Parcel.</li>
-                <li><strong>Kontrola Wersji:</strong> Biegłość w używaniu Git jest standardem w branży.</li>
-            </ul>
-            <h4>Sugerowane Tematy do Nauki (na ${pages} stronach):</h4>
-            <ol>
-                <li><strong>Zaawansowany JavaScript (ES6+):</strong> Opanuj koncepty takie jak <code>async/await</code>, <code>Promises</code>, <code>destructuring</code>, <code>spread/rest operators</code> i moduły.</li>
-                <li><strong>Głębokie Zrozumienie Reacta:</strong> Skup się na hookach (<code>useState</code>, <code>useEffect</code>, <code>useContext</code>), zarządzaniu stanem (Redux, Zustand) i cyklu życia komponentów.</li>
-                <li><strong>CSS-in-JS i Preprocesory:</strong> Poznaj Styled Components, Emotion lub tradycyjne podejścia jak SASS/LESS.</li>
-            </ol>
-            <p><em>Powodzenia na rozmowie!</em></p>
-        `;
-        generatedContent.innerHTML = aiResponse;
+        // Wywołanie nowego generatora AI
+        const aiPoweredContent = generateAIContent(position, requirements, pages);
+        generatedContent.innerHTML = aiPoweredContent;
+
         savePdfButton.classList.remove('d-none');
         generateButton.disabled = false;
 
@@ -552,7 +618,7 @@ recruitmentForm.addEventListener('submit', (e) => {
         localStorage.setItem('recruitmentHistory', JSON.stringify(history));
         loadSearchHistory();
 
-    }, 1500); // Symulacja opóźnienia
+    }, 500); // Krótkie opóźnienie dla UX
 });
 
 function loadSearchHistory() {
