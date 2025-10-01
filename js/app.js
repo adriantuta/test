@@ -49,13 +49,25 @@ const inputCheckBtn = document.getElementById('inputCheck');
 const inputNextBtn = document.getElementById('inputNext');
 const inputSpeakBtn = document.getElementById('inputSpeakBtn');
 const inputFs = document.getElementById('inputFs');
-const exercisesBtn = document.getElementById('exercisesTab');
-const exercisesSection = document.getElementById('exercisesSection');
+const studyTab = document.getElementById('studyTab');
+const exercisesTab = document.getElementById('exercisesTab');
+const recruitmentTab = document.getElementById('recruitmentTab');
+
 const studySection = document.getElementById('studySection');
+const exercisesSection = document.getElementById('exercisesSection');
+const recruitmentSection = document.getElementById('recruitmentSection');
+
 const backToStudy = document.getElementById('backToStudy');
 const exerciseControls = document.getElementById('exerciseControls');
 const exerciseContainer = document.getElementById('exerciseContainer');
 const exerciseVisibleEl = document.getElementById('exerciseVisible');
+
+// Recruitment elements
+const recruitmentForm = document.getElementById('recruitmentForm');
+const generateButton = document.getElementById('generateButton');
+const savePdfButton = document.getElementById('savePdfButton');
+const generatedContent = document.getElementById('generatedContent');
+const searchHistory = document.getElementById('searchHistory');
 
 let data = {}; // { level: { category: [ {en, pl}, ... ] } }
 let samples = {}; // { level: { category: { enLower: { enSample, plSample } } } }
@@ -167,7 +179,7 @@ function renderCategories(){
     const learned = getLearnedCount(currentLevel, cat);
     const pct = count ? Math.round(learned/count*100) : 0;
     btn.innerHTML = `<div class="d-flex justify-content-between align-items-center"><div><strong>${cat}</strong> <span class="count">(${count})</span></div><div class="subtle small">${pct}%</div></div>`;
-    btn.addEventListener('click', ()=>{ currentCategory = cat; resetSessionStats(); rebuildListOrder(); showStudy(); renderView(); });
+    btn.addEventListener('click', ()=>{ currentCategory = cat; resetSessionStats(); rebuildListOrder(); showPanel('study'); renderView(); });
     li.appendChild(btn); categoryList.appendChild(li);
   });
 }
@@ -286,8 +298,27 @@ function showView(view){ currentView=view; document.querySelectorAll('.view-tabs
     updateGlobalControlsVisibility();
 }
 
-function showExercises(){ studySection.classList.add('d-none'); exercisesSection.classList.remove('d-none'); renderExercises(); }
-function showStudy(){ exercisesSection.classList.add('d-none'); studySection.classList.remove('d-none'); }
+function showPanel(panelToShow) {
+    [studySection, exercisesSection, recruitmentSection].forEach(section => {
+        section.classList.add('d-none');
+    });
+
+    const activeTabClass = 'active';
+    [studyTab, exercisesTab, recruitmentTab].forEach(tab => tab.classList.remove(activeTabClass));
+
+    if (panelToShow === 'study') {
+        studySection.classList.remove('d-none');
+        studyTab.classList.add(activeTabClass);
+    } else if (panelToShow === 'exercises') {
+        exercisesSection.classList.remove('d-none');
+        exercisesTab.classList.add(activeTabClass);
+        renderExercises();
+    } else if (panelToShow === 'recruitment') {
+        recruitmentSection.classList.remove('d-none');
+        recruitmentTab.classList.add(activeTabClass);
+        loadSearchHistory();
+    }
+}
 
 function shuffleArray(arr){ for(let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]]; } }
 function pickDistractors(correct, items, n, isReverse) { const pool = items.map(x => (isReverse ? x.en : x.pl)).filter(p => p !== correct); shuffleArray(pool); return pool.slice(0, n); }
@@ -404,7 +435,7 @@ function nextFlash(){ flashIdx = (flashIdx+1) % (flashItems.length || 1); showFl
 
 // Keyboard shortcuts
 document.addEventListener('keydown', (e)=>{
-  if (!document.body.contains(studySection)) return;
+  if (!document.body.contains(studySection) && !document.body.contains(recruitmentSection)) return;
   if (!exercisesSection.classList.contains('d-none')){
     // exercises shortcuts (t to toggle PL)
     if (e.key.toLowerCase()==='t'){ exerciseShowPL = !exerciseShowPL; updateExercisePL(); }
@@ -467,9 +498,97 @@ document.addEventListener('fullscreenchange', ()=>{
 // Search
 searchInput.addEventListener('input', ()=> renderCategories());
 
-// Exercises
-exercisesBtn.addEventListener('click', showExercises);
-backToStudy.addEventListener('click', showStudy);
+// Main panel tabs
+studyTab.addEventListener('click', () => showPanel('study'));
+exercisesTab.addEventListener('click', () => showPanel('exercises'));
+recruitmentTab.addEventListener('click', () => {
+    showPanel('recruitment');
+    loadSearchHistory();
+});
+backToStudy.addEventListener('click', () => showPanel('study'));
+
+// Recruitment Form Logic
+recruitmentForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const link = document.getElementById('jobOfferLink').value;
+    const position = document.getElementById('jobPosition').value;
+    const requirements = document.getElementById('jobRequirements').value;
+    const pages = document.getElementById('pagesToGenerate').value;
+
+    generatedContent.innerHTML = '<p>Generowanie treści... <i class="bi bi-robot"></i></p>';
+    generateButton.disabled = true;
+    savePdfButton.classList.add('d-none');
+
+    // Symulacja generowania treści
+    setTimeout(() => {
+        const aiResponse = `
+            <h3>Wygenerowane Kompendium dla: ${position}</h3>
+            <p>Poniżej znajduje się streszczenie kluczowych zagadnień na podstawie dostarczonych wymagań. Pamiętaj, że jest to treść demonstracyjna.</p>
+            <h4>Analiza Wymagań:</h4>
+            <p>Wymagania, które podałeś (${requirements}), sugerują skupienie się na następujących obszarach:</p>
+            <ul>
+                <li><strong>Technologie Front-endowe:</strong> Zrozumienie HTML, CSS i JavaScript jest absolutnie kluczowe.</li>
+                <li><strong>Frameworki:</strong> Doświadczenie z nowoczesnymi frameworkami jak React, Angular lub Vue.js jest często wymagane.</li>
+                <li><strong>Narzędzia Budowania:</strong> Znajomość narzędzi takich jak Webpack, Babel czy Parcel.</li>
+                <li><strong>Kontrola Wersji:</strong> Biegłość w używaniu Git jest standardem w branży.</li>
+            </ul>
+            <h4>Sugerowane Tematy do Nauki (na ${pages} stronach):</h4>
+            <ol>
+                <li><strong>Zaawansowany JavaScript (ES6+):</strong> Opanuj koncepty takie jak <code>async/await</code>, <code>Promises</code>, <code>destructuring</code>, <code>spread/rest operators</code> i moduły.</li>
+                <li><strong>Głębokie Zrozumienie Reacta:</strong> Skup się na hookach (<code>useState</code>, <code>useEffect</code>, <code>useContext</code>), zarządzaniu stanem (Redux, Zustand) i cyklu życia komponentów.</li>
+                <li><strong>CSS-in-JS i Preprocesory:</strong> Poznaj Styled Components, Emotion lub tradycyjne podejścia jak SASS/LESS.</li>
+            </ol>
+            <p><em>Powodzenia na rozmowie!</em></p>
+        `;
+        generatedContent.innerHTML = aiResponse;
+        savePdfButton.classList.remove('d-none');
+        generateButton.disabled = false;
+
+        // Zapis do historii w localStorage
+        const historyEntry = `${new Date().toLocaleString()} | ${position}`;
+        let history = JSON.parse(localStorage.getItem('recruitmentHistory') || '[]');
+        history.unshift(historyEntry); // Dodaj na początek
+        if (history.length > 10) history.pop(); // Ogranicz do 10 wpisów
+        localStorage.setItem('recruitmentHistory', JSON.stringify(history));
+        loadSearchHistory();
+
+    }, 1500); // Symulacja opóźnienia
+});
+
+function loadSearchHistory() {
+    const history = JSON.parse(localStorage.getItem('recruitmentHistory') || '[]');
+    searchHistory.innerHTML = '';
+    if (history.length === 0) {
+        searchHistory.innerHTML = '<li class="list-group-item">Brak historii.</li>';
+        return;
+    }
+    history.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item';
+        li.textContent = item;
+        searchHistory.appendChild(li);
+    });
+}
+
+savePdfButton.addEventListener('click', () => {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    const content = document.getElementById('generatedContent');
+    const position = document.getElementById('jobPosition').value || 'dokument';
+    const filename = `rekrutacja-${position.replace(/\s+/g, '-').toLowerCase()}.pdf`;
+
+    doc.html(content, {
+        callback: function (doc) {
+            doc.save(filename);
+        },
+        x: 10,
+        y: 10,
+        width: 180,
+        windowWidth: 800
+    });
+});
+
 
 function buildExerciseControls(){
   exerciseControls.innerHTML='';

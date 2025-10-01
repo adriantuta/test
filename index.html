@@ -32,7 +32,11 @@
             </div>
             <ul class="list-unstyled d-grid gap-2" id="categoryList"></ul>
             <hr />
-            <button class="level-btn w-100 mt-2" id="exercisesTab">Ćwiczenia</button>
+            <div class="d-grid gap-2">
+                <button class="level-btn w-100 mt-2" id="studyTab">Nauka</button>
+                <button class="level-btn w-100" id="exercisesTab">Ćwiczenia</button>
+                <button class="level-btn w-100" id="recruitmentTab">Rekrutacje</button>
+            </div>
         </aside>
 
         <section class="glass">
@@ -166,12 +170,56 @@
                 <div class="subtle small mb-2">Widoczne: <span id="exerciseVisible">0</span></div>
                 <div id="exerciseContainer"></div>
             </div>
+
+            <!-- RECRUITMENT -->
+            <div id="recruitmentSection" class="d-none">
+                <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+                    <h2 class="m-0">Generator Materiałów Rekrutacyjnych</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <form id="recruitmentForm">
+                            <div class="mb-3">
+                                <label for="jobOfferLink" class="form-label">Link do ogłoszenia</label>
+                                <input type="url" class="form-control" id="jobOfferLink" placeholder="https://przyklad.pl/ogloszenie">
+                            </div>
+                            <div class="mb-3">
+                                <label for="jobPosition" class="form-label">Stanowisko</label>
+                                <input type="text" class="form-control" id="jobPosition" placeholder="np. Frontend Developer">
+                            </div>
+                            <div class="mb-3">
+                                <label for="jobRequirements" class="form-label">Wymagania / Zakres wiedzy</label>
+                                <textarea class="form-control" id="jobRequirements" rows="8" placeholder="Wklej tutaj wymagania z ogłoszenia lub opisz, czego chcesz się nauczyć..."></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pagesToGenerate" class="form-label">Ile stron A4 wygenerować?</label>
+                                <input type="number" class="form-control" id="pagesToGenerate" value="3" min="1" max="20">
+                            </div>
+                            <button type="submit" class="pill" id="generateButton"><i class="bi bi-gear"></i> Generuj</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Wygenerowana treść</h5>
+                        <div id="generatedContent" class="generated-content p-3 rounded mb-3" style="min-height: 200px; border: 1px solid var(--panel-border);">
+                            <p class="subtle">Tutaj pojawi się wygenerowane kompendium wiedzy.</p>
+                        </div>
+                        <button class="pill d-none" id="savePdfButton"><i class="bi bi-file-earmark-pdf"></i> Zapisz do PDF</button>
+
+                        <h5 class="mt-4">Historia</h5>
+                        <ul id="searchHistory" class="list-group">
+                           <li class="list-group-item">Historia wyszukiwań pojawi się tutaj.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="container text-center py-4 subtle small">Podwójny klik na słówko kopiuje je do schowka. Postęp i
         harmonogram SM‑2 są zapisywane lokalnie (LocalStorage).</footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="js/app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
